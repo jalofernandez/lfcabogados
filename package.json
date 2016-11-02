@@ -1,0 +1,24 @@
+{
+  "name": "lfcabogados",
+  "version": "1.0.0",
+  "description": "LFC abogados, expertos en Compliance Legal",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalofernandez/lfcabogados.git"
+  },
+  "author": "jalofernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalofernandez/lfcabogados/issues"
+  },
+  "homepage": "https://github.com/jalofernandez/lfcabogados#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

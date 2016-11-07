@@ -22,5 +22,8 @@
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.1.0",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp-less": "^3.2.0"
   }
 }

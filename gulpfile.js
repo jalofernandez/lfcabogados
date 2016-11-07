@@ -5,7 +5,9 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
 cleanCSS = require('gulp-clean-css'),
-imagemin = require('gulp-imagemin');
+imagemin = require('gulp-imagemin'),
+    less = require('gulp-less'),
+    path = require('path');
 
 /*
 * Configuración de la tarea 'default' (gulp)
@@ -38,4 +40,14 @@ gulp.task('img', function () {
     return gulp.src(['img/*/*.*'])
         .pipe(imagemin())
         .pipe(gulp.dest('img/dist'));
+});
+/*
+* Configuración de la tarea 'less' --> gulp-less (gulp less)
+*/
+gulp.task('less', function () {
+  return gulp.src('./less/**/_*.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('./css/dist'));
 });

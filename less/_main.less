@@ -1,0 +1,984 @@
+@import "variables.less";
+@import "timeline.less";
+
+/* ............ MAIN BODY .................................................... */
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    webkit-tap-highlight-color: @lightcoral;
+}
+
+/* ............ TEXT SELECTOR .................................................... */
+
+::-webkit-selection {
+    background-color: lightcoral;
+    color: @white;
+    text-shadow: none;
+}
+::-moz-selection {
+    background-color: lightcoral;
+    color: @white;
+    text-shadow: none;
+}
+::selection {
+    background-color: lightcoral;
+    color: @white;
+    text-shadow: none;
+}
+
+/* ............ COMMON CLASSES .................................................... */
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+.anim-hover {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.text-muted {
+    color: @text-muted;
+}
+
+.text-primary {
+    color: lightcoral;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+p.justify {
+    text-align: justify
+}
+
+p.effects span {
+    color: lightcoral;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: @main-color;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    color: lightcoral;
+    cursor: pointer;
+}
+
+b {
+    color: @grey-7;
+    letter-spacing: .02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: @headers;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: @bg-color;
+}
+
+.btn-primary {
+    background-color: @main-color;
+    border-color: @main-color;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: @white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: @secondary-color;
+    color: @third-color;
+    background-color: @secondary-color;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: transparent;
+    background-color: lightcoral;
+}
+
+.btn-primary .badge {
+    color: lightcoral;
+    background-color: @white;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    background-color: @main-color;
+    border-color: @transparent;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: @white;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: @transparent;
+    color: @third-color;
+    background-color: @secondary-color;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: @transparent;
+    background-color: @grey-e;
+}
+
+.btn-xl .badge {
+    color: lightcoral;
+    background-color: @white;
+}
+
+// BUTTONS (default)
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.form-control {
+    border: 1px solid @white;
+    border-radius: 0;
+}
+
+/* ............ NAVBAR-DEFAULT .................................................... */
+
+.navbar-default {
+    border-color: @transparent;
+    background-color: @white;
+    
+    .navbar-brand {
+        cursor: pointer;
+        
+        &:hover, &:focus, &:active, &.active {
+            color: @grey-c;
+        }
+        
+        img {
+            width: 150px;
+            height: auto;
+            position: relative;
+            bottom: 12px;
+        }
+    }
+    
+    // COLLAPSE (bootstrap)
+    .navbar-collapse {
+        border-color: rgba(255,255,255,.02);
+    }
+    
+    // TOGGLE (bootstrap)
+    .navbar-toggle {
+        border-color: @white;
+        background-color: @white;
+        
+        &:hover, &:focus {
+            background-color: @white;
+        }
+        
+        .icon-bar {
+            background-color: @main-color;
+        }
+    }
+    
+    // NAV (links) LIST
+    .nav li a {
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: @main-color;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        
+        &:hover, &:focus {
+            outline: 0;
+            color: @main-color;
+        }
+        
+        span {
+            text-transform: initial;
+            letter-spacing: 0.02em;
+            font-size: 13px;
+        }
+    }
+    
+    .navbar-nav>.active>a {
+        border-radius: 0;
+        color: @secondary-color;
+        background-color: @transparent;
+        
+        &:hover, &:focus {
+            color: @main-color;
+            background-color: @transparent;
+        }
+    }
+}
+
+// MEDIA QUERIES :: navbar-default
+
+@media(min-width:768px) and (max-width:991px) {
+    .navbar-header.page-scroll {
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+        left: 50%;
+        top: 40px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .navbar-right {
+        position: relative;
+        top: 20px;
+        width: 100%;
+    }
+    
+    .navbar-default .nav li a {
+        font-size: 13px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media(max-width:767px) {
+    .nav.navbar-nav {
+        border-bottom: 1px dashed @main-color;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: rgba(255,255,255,.9);
+        border-bottom: 1px solid #eee;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: @white;
+        
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+    }
+}
+
+/* ............ HEADER (main one!) .................................................... */
+
+header {
+    text-align: center;
+    color: @white;
+    background-attachment: scroll;
+    background-image: url(../../img/dist/header/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+    .intro-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        
+        .intro-lead-in {
+            margin-bottom: 25px;
+            font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 22px;
+            font-style: italic;
+            line-height: 22px;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+        }
+        
+        .intro-heading {
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+    }
+}
+
+// MEDIA QUERIES: header
+
+@media(min-width:768px) {
+    header {
+        .intro-text {
+            padding-top: 175px;
+            padding-bottom: 325px;
+            
+            .intro-lead-in {
+                margin-bottom: 25px;
+                font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 40px;
+                font-style: italic;
+                line-height: 50px;
+            }
+            
+            .intro-heading {
+                margin-bottom: 50px;
+                text-transform: uppercase;
+                font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 53px;
+                font-weight: 700;
+                line-height: 65px;
+                color: white;
+                text-shadow: 3px 3px 3px rgba(0,0,0,.5);
+            }
+        }
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+/* ............ SECTIONS (main blocks) .................................................... */
+
+section {
+    padding: 100px 0;
+    
+    // Main (section) Title
+    h2.section-heading {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    
+    // Secondary (section) TTitle
+    h3.section-subheading {
+        margin-bottom: 75px;
+        text-transform: none;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+}
+
+// MEDIA QUERIES: sections
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+/* ............ SECTION portfolio with modal dialogs (main block) .................................................... */
+
+#portfolio,
+#others {
+    
+    * {
+        z-index: 2;
+    }
+    
+    .portfolio-item {
+        right: 0;
+        margin: 0 0 15px;
+        
+        .portfolio-link {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            max-width: 400px;
+            
+            .portfolio-hover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background: rgba(255,255,255,.5);
+                -webkit-transition: all ease .5s;
+                -moz-transition: all ease .5s;
+                transition: all ease .5s;
+                
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                
+                &:hover + .portfolio-caption {
+                    box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.15);
+                }
+                
+                .portfolio-hover-content {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    height: 20px;
+                    margin-top: -12px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: lightcoral;
+                    
+                    i {
+                        margin-top: -12px;
+                    }
+                    
+                    h3,
+                    h4 {
+                       margin: 0; 
+                    }
+                }
+            }
+        }
+        
+        // Captation details
+        .portfolio-caption {
+            margin: 0 auto;
+            padding: 25px;
+            max-width: 400px;
+            text-align: center;
+            background-color: @white;
+            
+            h4 {
+              margin: 0;
+                text-transform: none;  
+            }
+            
+            p {
+                margin: 0;
+                font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                text-align: left
+            }
+        }
+    }
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    min-height: 175px;
+}
+
+#others .portfolio-item .portfolio-caption {
+    min-height: 75px;
+}
+
+// MEDIA QUERIES: special sections: portfolio with modal dialogs
+
+@media(min-width:767px) {
+    #portfolio,
+    #others {
+        .portfolio-item {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+/* ............ SECTION "Team" (main block) .................................................... */
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+    
+    img {
+        margin: 0 auto;
+        border: 1px solid @white;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.15);
+    }
+    
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 1.4em;
+        
+        span {
+            font-weight: 600;
+        }
+    }
+    
+    p {
+        margin-top: 0;
+        text-align: justify;
+        font-size: 1em;
+        line-height: 1.6em;
+        padding: 20px;
+        
+        span {
+            color: @lightcoral;
+        }
+    }
+}
+
+aside.clients img {
+    margin: 50px auto;
+}
+
+#contact {
+    background-color: lightcoral;
+    background-image: url(../../img/dist/common/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    a {
+        color: #61272c;
+        display: block;
+        margin: 10px 0;
+        text-align: left;
+        
+        &:hover {
+            color: @white;
+        }
+    }
+    
+    .section-heading {
+        color: @white;
+    }
+    
+    // for submit contact form
+    .form-group {
+        margin-bottom: 25px;
+        
+        textarea,
+        input {
+            padding: 20px;
+        }
+        
+        textarea.form-control {
+            height: 236px;
+        }
+        
+        input.form-control {
+            height: auto;
+        }
+    }
+    
+    .form-control:focus {
+        border-color: lightcoral;
+        box-shadow: none;
+    }
+    
+    .text-danger {
+        color: @red;
+    }
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+/* ............ FOOTER (common) .................................................... */
+
+footer {
+    border-top: 1px solid #eee;
+    padding: 25px 0 0 0;
+    text-align: center;
+    
+    ul.quicklinks,
+    span.copyright {
+        text-transform: uppercase;
+        text-transform: none;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        line-height: 40px;
+    }
+    
+    ul.quicklinks {
+        margin-bottom: 0;
+    }
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+    
+    li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        outline: 0;
+        color: #fff;
+        background-color: #c06169; /* Main Corp. Color */
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        
+        &:hover, &:focus, &:active {
+            color: @third-color;
+            background-color: @secondary-color
+        }
+    }
+}
+
+/* ... NEW ONES!! ... */
+
+section#services,
+section#finance {
+    .container .row:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+
+section#portfolio,
+section#others {
+    .container .row:nth-child(3) .section-heading {
+    margin-top: 100px;
+}
+}
+
+aside.clients h5 {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: @main-color;
+    color: @white;
+    text-align: center;
+}
+
+section#contact .section-subheading {
+    color: @white;
+}
+
+.browsers-list li {
+    font-size: 16px;
+    line-height: 28px;
+    list-style: none;
+}
+
+.sub-footer {
+    margin-top: 10px;
+    height: 50px;
+    font-size: 12px;
+    color: @grey-7;
+}
+
+.more-margin-bottom {
+    margin-bottom: 30px;
+}
+
+section h3.section-subheading i {
+    color: @lightcoral;
+}
+
+/* ... PORTFOLIO special section :: common MODAL dialogs ... */
+
+.portfolio-modal {
+    
+    .modal-content {
+        padding: 100px 0;
+        min-height: 100%;
+        border: 0;
+        border-radius: 0;
+        text-align: center;
+        background-clip: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        
+        // Main Title
+        h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
+        }
+        
+        // Text description
+        p {
+            margin-bottom: 30px;
+            
+            &:not(.item-intro) {
+                text-align: justify;
+            }
+            
+            &.item-intro {
+                margin: 20px 0 30px;
+                font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                font-style: italic;
+            }
+            
+            span {
+                color: @lightcoral;
+            }
+        }
+        
+        // List items
+        ul {
+            &:not(.list-inline) {
+                font-size: 15px;
+                line-height: 28px;
+                text-align: left;
+                text-decoration: none;
+                list-style: none;
+                
+                li:before {
+                    content: "·";
+                    color: coral;
+                    position: relative;
+                    right: 10px;
+                }
+                
+                li.sublist {
+                    padding-left: 25px;
+                    
+                    &:before {
+                        color: grey;
+                    }
+                }
+            }
+            
+            &.list-inline {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+        }
+        
+        // Images
+        img {
+            margin-bottom: 30px;
+        }
+        
+        // to Close Modal dialog
+        .close-modal {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 75px;
+            height: 75px;
+            background-color: transparent;
+            cursor: pointer;
+            
+            &:hover {
+                opacity: .3;
+            }
+            
+            .lr {
+                z-index: 1051;
+                width: 1px;
+                height: 75px;
+                margin-left: 35px;
+                background-color: @black-2;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                
+                .rl {
+                    z-index: 1052;
+                    width: 1px;
+                    height: 75px;
+                    background-color: @black-2;
+                    -webkit-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    
+    // Modal background
+    .modal-backdrop {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+/* ... NEW MEDIA QUERIES... */
+
+/* Tablets */
+@media all and (max-width: 768px) {
+    footer {
+        .text-right,
+        .text-left {
+            text-align: center;
+        }
+        .social-buttons  {
+            margin: 20px 0;
+        }
+    }
+    
+    .navbar-default .navbar-brand img  {
+        width: 125px;
+        bottom: 10px;
+    }
+    
+    header .intro-text .intro-heading,
+    section h2.section-heading { 
+       font-size: 30px;
+       line-height: 40px;
+    }
+    section#contact a {
+        padding: 10px 15px;
+        background-color: #fffcfc;
+        color: lightcoral;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+    section#contact a:hover {
+        background-color: lightcoral;
+        color: #fff;
+    }
+    .portfolio-modal .modal-content h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* mobile devices */
+@media all and (max-width: 599px) {
+    header .intro-text .intro-heading,
+    section h2.section-heading { 
+       font-size: 25px;
+       line-height: 35px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .portfolio-modal .modal-content h2 { 
+       font-size: 20px;
+    }
+}
+
+
+

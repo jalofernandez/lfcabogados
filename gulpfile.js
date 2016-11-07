@@ -49,5 +49,5 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulp.dest('./css/dist'));
+    .pipe(gulp.dest('./css/sources'));
 });

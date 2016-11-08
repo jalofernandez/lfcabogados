@@ -47,7 +47,7 @@ gulp.task('img', function () {
 * Configuración de la tarea 'less' --> gulp-less (gulp less)
 */
 gulp.task('less', function () {
-  return gulp.src('./less/**/_*.less')
+  return gulp.src('./less/**/*.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))

@@ -8,7 +8,8 @@ cleanCSS = require('gulp-clean-css'),
 imagemin = require('gulp-imagemin'),
     less = require('gulp-less'),
     path = require('path'),
-    jade = require('gulp-jade');
+    jade = require('gulp-jade'),
+ sitemap = require('gulp-sitemap');
 
 /*
 * Configuración de la tarea 'default' (gulp)
@@ -62,4 +63,18 @@ gulp.task('jade', function () {
       locals: YOUR_LOCALS
     }))
     .pipe(gulp.dest('./'));
+});
+/*
+* Configuración de la tarea 'sitemap' --> gulp-sitemap (gulp sitemap)
+*/
+gulp.task('sitemap', function () {
+    gulp.src('*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'http://www.lfcabogados.com',
+            changefreq: 'weekly',
+            priority: '1.0'
+        }))
+        .pipe(gulp.dest('./'));
 });

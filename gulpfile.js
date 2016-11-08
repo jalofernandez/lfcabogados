@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 cleanCSS = require('gulp-clean-css'),
 imagemin = require('gulp-imagemin'),
     less = require('gulp-less'),
-    path = require('path');
+    path = require('path'),
+    jade = require('gulp-jade');
 
 /*
 * Configuración de la tarea 'default' (gulp)
@@ -50,4 +51,15 @@ gulp.task('less', function () {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(gulp.dest('./css/sources'));
+});
+/*
+* Configuración de la tarea 'jade' --> gulp-jade (gulp jade)
+*/
+gulp.task('jade', function () {
+  var YOUR_LOCALS = {};
+  gulp.src('./jade/*.jade')
+    .pipe(jade({
+      locals: YOUR_LOCALS
+    }))
+    .pipe(gulp.dest('./'));
 });

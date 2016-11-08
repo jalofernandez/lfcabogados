@@ -24,6 +24,8 @@
     "gulp-uglify": "^2.0.0"
   },
   "dependencies": {
-    "gulp-less": "^3.2.0"
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.2.0",
+    "jade": "^1.11.0"
   }
 }

@@ -1,7 +1,20 @@
 @import "variables.less";
 @import "timeline.less";
 
+// Animate lib CSS
+@import "animate.css";
+
+// Bootstrap Core CSS
+@import "bootstrap.min.css";
+
+// Custom icon Fonts
+@import "../../font-awesome/css/font-awesome.min.css";
+
+// Custom Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Kaushan+Script|Montserrat:700,400|Roboto+Slab:100,300,400,700);
+
 /* ............ MAIN BODY .................................................... */
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -524,6 +537,15 @@ section {
                 
                 &:hover + .portfolio-caption {
                     box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.15);
+                }
+                
+                // to disable hover effects and modal dialogs
+                &.portfolio-hover-disable {
+                    cursor: default !important;
+                    
+                    &:hover {
+                        opacity: 0 !important;
+                    }
                 }
                 
                 .portfolio-hover-content {

@@ -20,16 +20,8 @@ html(lang='es')
     meta(name='msapplication-TileColor', content='#da532c')
     meta(name='msapplication-config', content='img/favicon/browserconfig.xml')
     meta(name='theme-color', content='#ffffff')
-    //- Bootstrap Core CSS
-    link(href='css/dist/bootstrap.min.css', rel='stylesheet')
-    //- Animate lib CSS
-    link(href='css/dist/animate.css', rel='stylesheet')
-    //- Custom CSS
+    //- Custom CSS with Bootstrap, Animate and Google Fonts
     link(href='css/dist/main.css', rel='stylesheet')
-    //- Custom icon Fonts
-    link(href='font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
-    //- Custom Google Fonts
-    link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Kaushan+Script|Montserrat:700,400|Roboto+Slab:100,300,400,700', rel='stylesheet')
     //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     //- WARNING: Respond.js doesn't work if you view the page via file://
     //if lt IE 9
@@ -457,7 +449,7 @@ html(lang='es')
           //- TIP 01 ::  Consultoria de Negocio
           .col-md-3.col-sm-6.portfolio-item
             a.portfolio-link(href='#codigo-etico', data-toggle='modal')
-              .portfolio-hover
+              .portfolio-hover.portfolio-hover-disable
                 .portfolio-hover-content
                   i.fa.fa-plus.fa-3x
               img.img-responsive(src='img/dist/portfolio/consultoria-negocio.png', alt='Definir o adaptar el Código ético o de buen gobierno de su empresa', title='Definir o adaptar el Código ético o de buen gobierno de su empresa')
@@ -465,11 +457,11 @@ html(lang='es')
               // <h4>Round Icons</h4>
               p.text-muted
                 b Consultoría de Negocio
-                | .
+                | : Desarrollamos "business plan" y su ejecución con consecución de ventas.
           //- TIP 02 :: Redes Comerciales
           .col-md-3.col-sm-6.portfolio-item
             a.portfolio-link(href='#riesgos-penales', data-toggle='modal')
-              .portfolio-hover
+              .portfolio-hover.portfolio-hover-disable
                 .portfolio-hover-content
                   i.fa.fa-plus.fa-3x
               img.img-responsive(src='img/dist/portfolio/redes-comerciales.png', alt='Elaborar un Mapa de riesgos penales', title='Elaborar un Mapa de riesgos penales')
@@ -477,11 +469,11 @@ html(lang='es')
               //- <h4>Round Icons</h4>
               p.text-muted
                 b Redes Comerciales
-                | : task force, key accounts, etc. Experiencia de mas de 20 años sectores gran consumo, telecomunicaciones, energia y banca
+                | : somos su departamento de Venta Externo, reduciendo sus costes fijos y dotando a su empresa de mucha más flexibilidad.
           //- TIP 03 :: Internacionalizacion
           .col-md-3.col-sm-6.portfolio-item
             a.portfolio-link(href='#identificar-procesos', data-toggle='modal')
-              .portfolio-hover
+              .portfolio-hover.portfolio-hover-disable
                 .portfolio-hover-content
                   i.fa.fa-plus.fa-3x
               img.img-responsive(src='img/dist/portfolio/internacionalizacion.png', alt='Identificar procesos y controles existentes', title='Identificar procesos y controles existentes')
@@ -489,11 +481,11 @@ html(lang='es')
               //- <h4>Round Icons</h4>
               p.text-muted
                 b Internacionalización
-                | : USA, Latinoamerica y Asia.
+                | : con más de 20 años de experiencia en mercados como USA, teniendo oficinas propias en NYC y Delegado Consultor de Negocio. Business plan en USA y Ronda de financiación.
           //- TIP 04 :: Import-Export
           .col-md-3.col-sm-6.portfolio-item
             a.portfolio-link(href='#prevencion-penal', data-toggle='modal')
-              .portfolio-hover
+              .portfolio-hover.portfolio-hover-disable
                 .portfolio-hover-content
                   i.fa.fa-plus.fa-3x
               img.img-responsive(src='img/dist/portfolio/import-export.png', alt='Elabora un Plan de Prevención Penal', title='Elabora un Plan de Prevención Penal')
@@ -501,7 +493,7 @@ html(lang='es')
               //- <h4>Round Icons</h4>
               p.text-muted
                 b Import-Export
-                | : USA, Latinoamerica y Asia.
+                | : más de 15 años de experiencia en Export-Import UK, Francia, Alemania, Italia, Costa Rica, Colombia, USA y China.
           .clearfix
     //- TEAM (section)
     section#team.bg-light-gray
@@ -630,9 +622,15 @@ html(lang='es')
                 span Puebla
               h5.text-muted Abogado asociado
               p.text-muted
-                span (¡Necesito texto!)
-                em (texto de Sergio Amadeo a sustituir por el de Laura Puebla)
-                | .
+                | Licenciada en Derecho con mas de
+                span  20 años de experiencia en derecho Mercantil y de Empresa
+                | . Experta en
+                b  RSC (Responsabilidad Corporativa)
+                | ,
+                b  asesoría de empresas
+                |  (fiscal, laboral y mercantil) así como
+                b  consultoría empresarial
+                | : planes de viabilidad, estudios de mercado, pan anticrisis, reflotamiento empresarial, búsqueda de financiación, staff externo, desarrollo de negocio, internacionalización, comercio exterior...
               //-
                 <ul class="list-inline social-buttons">
                 <li><a href="#"><i class="fa fa-twitter"></i></a>

@@ -1,20 +1,28 @@
 /*
 * Dependencias
 */
-var gulp = require('gulp'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-cleanCSS = require('gulp-clean-css'),
-imagemin = require('gulp-imagemin'),
-    less = require('gulp-less'),
-    path = require('path'),
-    jade = require('gulp-jade'),
- sitemap = require('gulp-sitemap');
+    var gulp = require('gulp'),
+      concat = require('gulp-concat'),
+      uglify = require('gulp-uglify'),
+    cleanCSS = require('gulp-clean-css'),
+    imagemin = require('gulp-imagemin'),
+        less = require('gulp-less'),
+ gulpIgnore  = require('gulp-ignore'),
+        path = require('path'),
+        jade = require('gulp-jade'),
+     sitemap = require('gulp-sitemap');
+
+var condition = './less/**/!variables.less';
 
 /*
 * Configuración de la tarea 'default' (gulp)
 */
 gulp.task('default', ['js', 'css', 'img']);
+
+/*
+* Configuración de la tarea 'default' (gulp)
+*/
+gulp.task('deploy', ['js', 'jade', 'less', 'css', 'img', 'sitemap']);
 
 /*
 * Configuración de la tarea 'js' --> gulp-concat + gulp-uglify (gulp js)
@@ -30,7 +38,7 @@ gulp.task('js', function () {
 * Configuración de la tarea 'css' --> gulp-clean-css (gulp css)
 */
 gulp.task('css', function() {
-  return gulp.src('css/sources/*.css')
+  return gulp.src('css/sources/main.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('css/dist'));
 });
@@ -47,10 +55,11 @@ gulp.task('img', function () {
 * Configuración de la tarea 'less' --> gulp-less (gulp less)
 */
 gulp.task('less', function () {
-  return gulp.src('./less/**/*.less')
+  return gulp.src('./less/**/[^_]*.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
+    .pipe(gulpIgnore.exclude(condition))
     .pipe(gulp.dest('./css/sources'));
 });
 /*

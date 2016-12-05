@@ -12,17 +12,15 @@
         jade = require('gulp-jade'),
      sitemap = require('gulp-sitemap');
 
-var condition = './less/**/!variables.less';
+/*
+* Configuración de la tarea 'default' (gulp) last step to publish
+*/
+gulp.task('default', ['sitemap', 'css']);
 
 /*
-* Configuración de la tarea 'default' (gulp)
+* Configuración de la tarea 'deploy' (gulp) first step: compile
 */
-gulp.task('default', ['js', 'css', 'img']);
-
-/*
-* Configuración de la tarea 'default' (gulp)
-*/
-gulp.task('deploy', ['js', 'jade', 'less', 'css', 'img', 'sitemap']);
+gulp.task('deploy', ['js', 'jade', 'less', 'img']);
 
 /*
 * Configuración de la tarea 'js' --> gulp-concat + gulp-uglify (gulp js)
@@ -47,7 +45,7 @@ gulp.task('css', function() {
 * Configuración de la tarea 'img' --> gulp-imagemin (gulp img)
 */
 gulp.task('img', function () {
-    return gulp.src(['img/*/*.*'])
+    return gulp.src(['img/sources/**/*.*'])
         .pipe(imagemin())
         .pipe(gulp.dest('img/dist'));
 });
@@ -59,7 +57,6 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulpIgnore.exclude(condition))
     .pipe(gulp.dest('./css/sources'));
 });
 /*

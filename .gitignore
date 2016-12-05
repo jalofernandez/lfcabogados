@@ -1,4 +1,3 @@
-js/sources
 bower_components
 node_modules
 .tmp
@@ -9,3 +8,7 @@ Icon
 ._*
 .Spotlight-V100
 .Trashes
+css/sources
+img/sources
+js/sources
+gitignore

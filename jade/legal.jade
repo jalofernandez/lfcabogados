@@ -7,6 +7,7 @@ html(lang='es')
     meta(name='keywords', content='compliance, compliance penal, compliance empresas, compliance pymes, cumplimiento normativo, modelo de compliance penal, modelo de prevención de delitos, responsabilidad penal de las empresas, responsabilidad penal de las personas jurídicas, abogados penalistas, derecho penal económico, derecho penal empresa, delitos económicos, defensa, abogados penalistas en madrid, abogados derecho civil, especialistas en derecho penal, penal internacional, penal económico')
     meta(name='description', content='LFC Abogados y Economistas expertos en Compliance penal. Asesoramos en materia jurídico penal preventiva en el ámbito del derecho penal económico y de empresa además de implantar, gestionar y mantener el cumplimiento de los sistemas de gestión de de responsabilidad penal en las empresas, formación, auditoría y consultoría compliance.')
     meta(name='author', content='LFC Abogados y Economistas')
+    meta(name='google-site-verification', content='fX5Wb7zfl3R3xTch_ZuB-WF_3TxhwSRZCzxhmz39hhM')
     title LFC Abogados y Economistas
     link(rel='apple-touch-icon', sizes='57x57', href='img/dist/favicon/apple-touch-icon-57x57.png')
     link(rel='apple-touch-icon', sizes='60x60', href='img/dist/favicon/apple-touch-icon-60x60.png')
@@ -38,7 +39,7 @@ html(lang='es')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand.page-scroll(href='index.html')
+          a.navbar-brand.page-scroll(href='#page-top')
             img(src='img/dist/common/lfc_logo.svg', alt='LFC, abogados especilaistas en compliance', title='LFC, abogados especilaistas en compliance')
         //- Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse.animated.fadeIn
@@ -46,186 +47,661 @@ html(lang='es')
             li.hidden
               a(href='#page-top')
             li
-              a(href='index.html')
-                i.fa.fa-home
-                span Sobre
-                |  LFC
+              a.page-scroll(href='#services') Compliance legal
             li
-              a.page-scroll(href='#terms-intro') Términos
+              a.page-scroll(href='#finance') Corporate Finance
             li
-              a.page-scroll(href='#lopd') LOPD
+              a.page-scroll(href='#others') Otros servicios
             li
-              a.page-scroll(href='#cookies') Cookies
+              a.page-scroll(href='#team') Equipo
             li
-              a.page-scroll(href='#responsabilidad') Responsabilidad
-            li
-              a.page-scroll(href='#propiedad') Propiedad
+              a.page-scroll(href='#contact') Contacto
         //- /.navbar-collapse
       //- /.container-fluid
     //- Header
-    header.terms-header
+    header
       .container
-    //- TERMS 01 :: "Términos legales"
-    section#terms-intro.bg-light-gray
+        .intro-text.animated.fadeIn
+          .intro-lead-in
+            | Especializados en Compliance, asesoramiento financiero a empresas, consultoría de negocio...
+          .intro-heading ¡CONTÁCTANOS!
+          //- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+    //- Services Section
+    section#services
       .container
         .row
           .col-lg-12.text-center
             h2.section-heading
-              | Términos 
-              span legales
-            h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
-              i.fa.fa-gavel.fa-3x(aria-hidden='true')
-        .row
-          .col-md-10.col-md-offset-1
-            p.text-muted.justify.effects
-              span LFC Abogados y Economistas, S.L. 2016
-              | , responsable del sitio web, pone a disposición de los usuarios el presente documento con el que pretende dar cumplimiento a las obligaciones dispuestas en la 
-              b
-                | Ley 34/2002, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE)
-              | , así como informar a todos los usuarios del sitio web respecto a cuáles son las condiciones de uso del sitio web.
-            p.text-muted.justify.effects
-              | Toda persona que acceda a este sitio web asume el papel de usuario, comprometiéndose a la observancia y cumplimiento riguroso de las disposiciones aquí dispuestas, así como a cualesquiera otra disposición legal que fuera de aplicación.
-            p.text-muted.justify.effects
-              span LFC Abogados y Economistas
-              |  se reserva el derecho a modificar cualquier tipo de información que pudiera aparecer en el sitio web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones, entendiéndose como suficiente con la publicación en el sitio web de la 
-              span LFC Abogados y Economistas
+              | ¿Por qué 
+              span compliance
+              | ?
+            h3.section-subheading.text-muted Tus clientes ya te los están exigiendo:
+        //- 3 Text Block
+        .row.text-center.animated.fadeInDown
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-building-o.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted
+              | En toda empresa existe riesgo de 
+              b comisión de delito
+              | , sin importar el tamaño o el sector.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-legal.fa-stack-1x.fa-inverse
+            // <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted
+              | Blinda tu empresa ante una 
+              b causa penal
               | .
-    //- TERMS 02 :: "Ley orgánica de protección de datos"
-    section#lopd
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-laptop.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted
+              | Muestra a tus clientes tu 
+              b código ético
+              |  a través de tu Web.
+        //- 3 Text Block
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-lock.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted
+              | Implementa un 
+              b canal de denuncias
+              |  que te proteja.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-area-chart.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted
+              | Vende 
+              b confianza
+              |  al mercado.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-pie-chart.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted
+              | Preparate para el 
+              b nuevo modelo
+              |  de comercio.
+    //- COMPLIANCE LEGAL :: Portfolio Grid Section
+    section#portfolio.bg-light-gray
       .container
         .row
           .col-lg-12.text-center
             h2.section-heading
-              | Ley orgánica de 
-              span protección de datos
+              | ¿Qué es 
+              span compliance
+              | ?
             h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
-              i.fa.fa-shield.fa-3x(aria-hidden='true')
+              | Es un programa legal específico para su empresa u organización con el fin de exonerar a esta de la responsabilidad penal.
         .row
-          .col-md-10.col-md-offset-1
+          .col-md-6.col-sm-12
             p.text-muted.justify.effects
-              span LFC Abogados y Economistas
-              |  se encuentra profundamente comprometida con el cumplimiento de la normativa española de protección de datos de carácter personal, y garantiza el cumplimiento íntegro de las obligaciones dispuestas, así como la implementación de las medidas de seguridad dispuestas en el 
-              b
-                | art. 9 de la Ley 15/1999, de Protección de Datos de Carácter Personal (LOPD) y en el Reglamento de Desarrollo de la LOPD
-              | .
-            p.text-muted.justify.effects
-              | Conforme a lo establecido en la 
-              b
-                | Ley de Servicios de Sociedad de la Información y del Comercio Electrónico, 34/2002
-              | , de 11 de julio, al cursar esta suscripción usted nos da su consentimiento expreso para realizarle envíos vía correo electrónico desde 
-              span LFC Abogados y Economistas
-              | , que podrán incluir contenidos como invitaciones a eventos profesionales, información de índole comercial de productos, servicios o soluciones que puedan ser de su interés.
-            p.text-muted.justify.effects
-              | En cualquier caso, si por cualquier motivo desea dejar de recibir nuestras comunicaciones electrónicas, puede indicárnoslo fácilmente usando el vínculo que incluimos a tal efecto al pie de nuestros mensajes de correo electrónico. Alternativamente, también puede escribirnos a la dirección 
-              a(href='mailto:info@lfcabogados.com', title='Enviar email a LFC Abogados y Economistas') info@lfcabogados.com
-              |  para solicitarnos la modificación o cancelación de sus datos.
-            p.text-muted.justify.effects
-              | No obstante lo anterior y con el ánimo de proteger aún más, si cabe, su control sobre sus datos y para contemplar aquellos casos en los que la excepción anterior pueda no ser de aplicación, sus datos serán incorporados a un fichero automatizado convenientemente registrado ante la Agencia Española de Protección de Datos (AGPD) y sobre el que podrá ejercer sus derechos reconocidos legalmente (acceso, rectificación, cancelación y oposición) escribiendo a la dirección de correo electrónico indicada más arriba indicando claramente, en ambos casos, que su comunicación está relacionada con “Protección de Datos”.
-    //- TERMS 03 :: "Uso de Cookies"
-    section#cookies.bg-light-gray
-      .container
-        .row
-          .col-lg-12.text-center
-            h2.section-heading
-              | Uso de 
-              span Cookies
-            h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
-              i.fa.fa-database.fa-3x(aria-hidden='true')
-        .row
-          .col-md-10.col-md-offset-1
-            .col-md-4
-              p.text-muted.justify.effects
-                | Como 
-                b desactivar las cookies
-                |  en:
-              ul.browsers-list
-                li
-                  i.fa.fa-internet-explorer(aria-hidden='true')
-                  a(href='http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9', target='_blank', title='Como desactivar cookies en Internet Explorer') Internet Explorer
-                li
-                  i.fa.fa-firefox(aria-hidden='true')
-                  a(href='https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we', target='_blank', title='Como desactivar cookies en Firefox') Firefox
-                li
-                  i.fa.fa-chrome(aria-hidden='true')
-                  a(href='https://support.google.com/chrome/answer/95647?hl=es', target='_blank', title='Como desactivar cookies en Chrome') Chrome
-                li
-                  i.fa.fa-safari(aria-hidden='true')
-                  a(href='http://www.apple.com/es/support/mac-apps/safari/', target='_blank', title='Como desactivar cookies en Safari') Safari
-                li
-                  i.fa.fa-opera(aria-hidden='true')
-                  a(href='http://help.opera.com/Windows/11.50/es-ES/cookies.html', target='_blank', title='Como desactivar cookies en Opera') Opera
-            .col-md-8
-              p.text-muted.justify.effects
-                | El sitio web de 
-                span LFC Abogados y Economistas
-                |  puede utilizar 
-                b cookies
-                |  (pequeños archivos de información que el servidor envía al ordenador de quien accede a la página) para llevar a cabo determinadas funciones que son consideradas imprescindibles para el correcto funcionamiento y visualización del sitio. Las cookies utilizadas en el sitio web tienen, en todo caso, carácter temporal con la única finalidad de hacer más eficaz su transmisión ulterior y desaparecen al terminar la sesión del usuario. En ningún caso se utilizarán las cookies para recoger información de carácter personal.
-              p.text-muted.justify.effects
-                | El usuario puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador.
-              p.text-muted.justify.effects
-                | Las cookies serán tratadas por el titular de esta página web y, en su caso, por entidades a las que se les haya encomendado su tratamiento con finalidades legítimas.
-    //- TERMS 04 :: "Responsabilidad"
-    section#responsabilidad
-      .container
-        .row
-          .col-lg-12.text-center
-            h2.section-heading
-              span Responsabilidad
-            h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
-              i.fa.fa-check.fa-3x(aria-hidden='true')
-        .row
-          .col-md-10.col-md-offset-1
-            p.text-muted.justify.effects
-              span LFC Abogados y Economistas
-              |  se exime de cualquier tipo de responsabilidad derivada de la información publicada en su sitio web, siempre que esta información haya sido manipulada o introducida por un tercero ajeno al mismo.
-            p.text-muted.justify.effects
-              | Desde el sitio web del cliente es posible que se redirija a contenidos de terceros sitios web. Dado que 
-              span LFC Abogados y Economistas
-              |  no puede controlar siempre los contenidos introducidos por los terceros en sus sitios web, éste no asume ningún tipo de responsabilidad respecto a dichos contenidos. En todo caso, 
-              span LFC Abogados y Economistas
-              |  manifiesta que procederá a la retirada inmediata de cualquier contenido que pudiera contravenir la legislación nacional o internacional, la moral o el orden público, procediendo a la retirada inmediata de la redirección a dicho sitio web, poniendo en conocimiento de las autoridades competentes el contenido en cuestión.
-            p.text-muted.justify.effects
-              span LFC Abogados y Economistas
-              |  no se hace responsable de la información y contenidos almacenados, a título enunciativo pero no limitativo, en foros, chat's, generadores de blogs, comentarios, redes sociales o cualesquiera otro medio que permita a terceros publicar contenidos de forma independiente en la página web de 
-              span LFC Abogados y Economistas
-              | . No obstante y en cumplimiento de lo dispuesto en el 
-              b art. 11 y 16 de la LSSI-CE
+              | La 
+              span implantación de un modelo de prevención penal
+              |  (MPP) es necesaria para garantizar la supervivencia y 
+              b continuidad de la empresa
+              |  y es un modelo de gestión que le 
+              b da prestigio
               | , 
-              span LFC Abogados y Economistas
-              |  se pone a disposición de todos los usuarios, autoridades y fuerzas de seguridad, y colaborando de forma activa en la retirada o en su caso bloqueo de todos aquellos contenidos que pudieran afectar o contravenir la legislación nacional, o internacional, derechos de terceros o la moral y el orden público. En caso de que el usuario considere que existe en el sitio web algún contenido que pudiera ser susceptible de esta clasificación, se ruega lo notifique de forma inmediata al administrador del sitio web mediante la siguiente dirección de correo electrónico: 
-              a(href='mailto:info@lfcabogados.com', title='Enviar email a LFC Abogados y Economistas') info@lfcabogados.com
+              b otorga seguridad jurídica
+              |  y le ayuda a 
+              b preservar su reputación
+              | .
+          .col-md-6.col-sm-12
             p.text-muted.justify.effects
-              | Este sitio web ha sido revisado y probado para que funcione correctamente. En principio, puede garantizarse el correcto funcionamiento los 365 días del año, 24 horas al día. No obstante, 
-              span LFC Abogados y Economistas
-              |  no descarta la posibilidad de que existan ciertos errores de programación, o que acontezcan causas de fuerza mayor, catástrofes naturales, huelgas, o circunstancias semejantes que hagan imposible el acceso a la página web.
-    //- TERMS 05 :: "Propiedad intelectual"
-    section#propiedad.bg-light-gray
+              | Es la 
+              span única forma de evitar que la empresa pueda ser declarada responsable penalmente
+              | , evitando que se le puedan imponer las sanciones previstas en el artículo 33.7 del Código Penal: multa, disolución de la persona jurídica, suspensión de actividades, clausura de locales y establecimientos, inhabilitación para contratar con el sector público, o la intervención judicial. En este punto, es importante tener en cuenta que 
+              b
+                | los Seguros de Responsabilidad Civil no cubren la responsabilidad penal ni la civil derivada del delito
+              | .
+        .row
+          .col-lg-12.text-center
+            h2.section-heading
+              | ¿Qué 
+              span ofrecemos
+              | ?
+            h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
+              | Prepárate para el nuevo modelo de comercio.
+              br
+              | No habrá negocio sin 
+              b Compliance
+              | .
+        .row
+          //- TIP 01
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#codigo-etico', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/codigo-etico.png', alt='Definir o adaptar el Código ético o de buen gobierno de su empresa', title='Definir o adaptar el Código ético o de buen gobierno de su empresa')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Ayudarle a definir o adaptar el 
+                b Código ético
+                |  o de buen gobierno de su empresa.
+          // TIP 02
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#riesgos-penales', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/mapa-riesgos-penales.png', alt='Elaborar un Mapa de riesgos penales', title='Elaborar un Mapa de riesgos penales')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Elaborar un Mapa de 
+                b riesgos penales
+                | .
+          // TIP 03
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#identificar-procesos', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/identificar-procesos.png', alt='Identificar procesos y controles existentes', title='Identificar procesos y controles existentes')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                b Identificar procesos
+                |  y controles existentes.
+          // TIP 04
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#prevencion-penal', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/prevencion-penal.png', alt='Elabora un Plan de Prevención Penal', title='Elabora un Plan de Prevención Penal')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Elabora un 
+                b Plan de Prevención Penal
+                |  (PPP).
+          .clearfix
+          //- TIP 05
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#protocolos-juridicos', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/protocolos-juridicos.png', alt='Formación de voluntad de la persona jurídica', title='Formación de voluntad de la persona jurídica')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Le ayudamos a establecer protocolos que concreten el proceso de 
+                b formación de voluntad de la persona jurídica
+                | .
+          //- TIP 06
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#canal-etico', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/canal-etico.png', alt='Canal ético o sistema de denuncias', title='Canal ético o sistema de denuncias')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Diseñamos para Ud. el 
+                b Canal ético o sistema de denuncias
+                |  y se lo gestionamos si Ud. Lo desea.
+          //- TIP 07
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#sistema-disciplinario', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/sistema-disciplinario.png', alt='Implantación de un Sistema disciplinario compatible con su Convenio Colectivo', title='Implantación de un Sistema disciplinario compatible con su Convenio Colectivo')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Le asesoramos en la implantación de un 
+                b Sistema disciplinario
+                |  compatible con su Convenio Colectivo.
+          //- TIP 08
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#plan-formacion', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/plan-formacion.png', alt='Plan de formación en su empresa', title='Plan de formación en su empresa')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Desarrollamos el 
+                b plan de formación
+                |  en su empresa.
+          .clearfix
+          //- TIP 09
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#verificacion-ppp', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/verificacion-ppp.png', alt='Verificación periódica del PPP', title='Verificación periódica del PPP')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Realizamos 
+                b verificación periódica del PPP
+                |  y certificamos su idoneidad.
+          //- TIP 10
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#patrimonio-accionista', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/patrimonio-accionista.png', alt='Proteccion del patrimonio', title='Proteccion del patrimonio')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                | Proteccion del 
+                b patrimonio de los accionista
+                | .
+          //- TIP 11
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#responsabilidad-civil', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/responsabilidad-civil.png', alt='Proteccion del patrimonio', title='Proteccion del patrimonio')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                b Responsabilidad Civil y Penal
+                |  de Administradores, Directivos y Mandos Intermedios.
+    //- CASOS A EVITAR (section)
+    section#about
       .container
         .row
           .col-lg-12.text-center
             h2.section-heading
-              | Propiedad 
-              span intelectual
-            h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
-              i.fa.fa-file.fa-3x(aria-hidden='true')
+              | Casos a 
+              span evitar
+            h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
         .row
-          .col-md-10.col-md-offset-1
-            p.text-muted.justify.effects
-              | El sitio web, incluyendo a título enunciativo pero no limitativo su programación, edición, compilación y demás elementos necesarios para su funcionamiento, los diseños, logotipos, texto y/o gráficos son propiedad del prestador o en su caso dispone de licencia o autorización expresa por parte de los autores. Todos los contenidos del sitio web se encuentran debidamente protegidos por la normativa de propiedad intelectual e industrial, así como inscritos en los registros públicos correspondientes.
-            p.text-muted.justify.effects
-              | Independientemente de la finalidad para la que fueran destinados, la reproducción total o parcial, uso, explotación, distribución y comercialización, requiere en todo caso de la autorización escrita previa por parte del prestador. Cualquier uso no autorizado previamente por parte del prestador será considerado un incumplimiento grave de los derechos de propiedad intelectual o industrial del autor. Los diseños, logotipos, texto y/o gráficos ajenos al prestador y que pudieran aparecer en el sitio web, pertenecen a sus respectivos propietarios, siendo ellos mismos responsables de cualquier posible controversia que pudiera suscitarse respecto a los mismos. En todo caso, el prestador cuenta con la autorización expresa y previa por parte de los mismos.
-            p.text-muted.justify.effects
-              span LFC Abogados y Economistas
-              |  autoriza expresamente a que terceros puedan redirigir directamente a los contenidos concretos del sitio web, debiendo en todo caso redirigir al sitio web principal del prestador.
-            p.text-muted.justify.effects
-              span LFC Abogados y Economistas
-              |  reconoce a favor de sus titulares los correspondientes derechos de propiedad industrial e intelectual, no implicando su sola mención o aparición en el sitio web la existencia de derechos o responsabilidad alguna de 
-              span LFC Abogados y Economistas
-              |  sobre los mismos, como tampoco respaldo, patrocinio o recomendación por parte del mismo.
-            p.text-muted.justify.effects
-              | Para realizar cualquier tipo de observación respecto a posibles incumplimientos de los derechos de propiedad intelectual o industrial, así como sobre cualquiera de los contenidos del sitio web, puede hacerlo a través del siguiente correo electrónico: 
-              a(href='mailto:info@lfcabogados.com', title='Enviar email a LFC Abogados y Economistas') info@lfcabogados.com
+          .col-lg-12
+            ul.timeline
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/dist/about/corrupcion.png', alt='Corrupción', title='Corrupción')
+                .timeline-panel
+                  .timeline-heading
+                    //- <h4>2014</h4>
+                    h4.subheading Corrupción:
+                  .timeline-body
+                    p.text-muted
+                      | Corrupción entre particulares, regalos, invitaciones, comisiones ilegales, con el ánimo de comprar la voluntad del contrante.
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/dist/about/cohecho.png', alt='Cohecho', title='Cohecho')
+                .timeline-panel
+                  .timeline-heading
+                    //- <h4>2014</h4>
+                    h4.subheading Cohecho:
+                  .timeline-body
+                    p.text-muted Cohecho impropio en la relación con la administración Pública.
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/dist/about/apropiacion-indebida.png', alt='Apropiación indebida', title='Apropiación indebida')
+                .timeline-panel
+                  .timeline-heading
+                    //- <h4>2014</h4>
+                    h4.subheading Apropiación indebida:
+                  .timeline-body
+                    p.text-muted
+                      | Fraude interno apropiación indebida por parte de los empleados de
+                      | activos de la Empresa.
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/dist/about/delitos-medioambientales.png', alt='Delitos ambientales', title='Delitos ambientales')
+                .timeline-panel
+                  .timeline-heading
+                    //- <h4>2014</h4>
+                    h4.subheading Delitos ambientales:
+                  .timeline-body
+                    p.text-muted
+                      | Directivo de Unidad Productiva que reduce costes de producción elimiando controles en la eliminación de residuos que generan un delito ambiental.
+              li.timeline-inverted
+                .timeline-image
+                  h4
+                    | ¡Evita
+                    br
+                    | estos
+                    br
+                    | casos!
+    //- CORPORATE FINANCE (section)
+    section#finance.bg-light-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading
+              | Corporate 
+              span Finance
+            h3.section-subheading.text-muted
+              | Asesoramiento financiero especializado a empresas, tanto a nivel nacional como internacional.
+        //- 3 Text Block
+        .row.text-center.animated.fadeInDown
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-info.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted Servicios de Consultoria Financiera.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-bank.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted Financiacion Bancaria.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-star-half-o.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted Capital Riesgo.
+        //- 3 Text Block
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-money.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted Business Angels.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-flag.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted Subvenciones de la UE.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-suitcase.fa-stack-1x.fa-inverse
+            //- <h4 class="service-heading">E-Commerce</h4>
+            p.text-muted Capital Privado.
+    //- OTROS SERVICIOS (section)
+    section#others
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading
+              | Más 
+              span servicios
+              |  profesionales
+            h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
+              | Buscamos la excelencia en cada uno de nuestros servicios y una 
+              b adaptación total a las necesidades del cliente
+              | .
+        .row
+          //- TIP 01 ::  Consultoria de Negocio
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#codigo-etico', data-toggle='modal')
+              .portfolio-hover.portfolio-hover-disable
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/consultoria-negocio.png', alt='Definir o adaptar el Código ético o de buen gobierno de su empresa', title='Definir o adaptar el Código ético o de buen gobierno de su empresa')
+            .portfolio-caption
+              // <h4>Round Icons</h4>
+              p.text-muted
+                b Consultoría de Negocio
+                | : Desarrollamos "business plan" y su ejecución con consecución de ventas.
+          //- TIP 02 :: Redes Comerciales
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#riesgos-penales', data-toggle='modal')
+              .portfolio-hover.portfolio-hover-disable
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/redes-comerciales.png', alt='Elaborar un Mapa de riesgos penales', title='Elaborar un Mapa de riesgos penales')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                b Redes Comerciales
+                | : somos su departamento de Venta Externo, reduciendo sus costes fijos y dotando a su empresa de mucha más flexibilidad.
+          //- TIP 03 :: Internacionalizacion
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#identificar-procesos', data-toggle='modal')
+              .portfolio-hover.portfolio-hover-disable
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/internacionalizacion.png', alt='Identificar procesos y controles existentes', title='Identificar procesos y controles existentes')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                b Internacionalización
+                | : con más de 20 años de experiencia en mercados como USA, teniendo oficinas propias en NYC y Delegado Consultor de Negocio. Business plan en USA y Ronda de financiación.
+          //- TIP 04 :: Import-Export
+          .col-md-3.col-sm-6.portfolio-item
+            a.portfolio-link(href='#prevencion-penal', data-toggle='modal')
+              .portfolio-hover.portfolio-hover-disable
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/dist/portfolio/import-export.png', alt='Elabora un Plan de Prevención Penal', title='Elabora un Plan de Prevención Penal')
+            .portfolio-caption
+              //- <h4>Round Icons</h4>
+              p.text-muted
+                b Import-Export
+                | : más de 15 años de experiencia en Export-Import UK, Francia, Alemania, Italia, Costa Rica, Colombia, USA y China.
+          .clearfix
+    //- TEAM (section)
+    section#team.bg-light-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading
+              | Nuestro 
+              span equipo
+              |  de 
+              span profesionales
+            h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        .row
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/dist/team/a_decastro.jpg', alt='Alejandro de Castro, economista, MBA y PDG por el IESE, empresario y consultor de Management de empresas nacionales y multinacionales.', title='Alejandro de Castro, economista, MBA y PDG por el IESE, empresario y consultor de Management de empresas nacionales y multinacionales.')
+              h4
+                | Alejandro 
+                span de Castro
+              h5.text-muted Socio Director
+              p.text-muted
+                | Licenciado en Ciencias Economicas y Empresariales por la Universidad Complutense. MBA y PDG por el IESE y 
+                span 25 años de experiencia en multinacionales
+                |  como Unilever, Banco Santander y Heineken. Los últimos 
+                b 10 años empresario
+                |  y 
+                span consultor de Management
+                | .
+              //-
+                <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                </ul>
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/dist/team/a_godino.jpg', alt='Álvaro Godino García, abogado especialista en en Derecho Mercantil y Laboral', title='Álvaro Godino García, abogado especialista en en Derecho Mercantil y Laboral')
+              h4
+                | Álvaro 
+                span Godino García
+              h5.text-muted Socio Director
+              p.text-muted
+                | Abogado, con más de 
+                span 25 años de experiencia en Derecho Mercantil y Laboral 
+                | , asesorando a múltiples empresas nacionales y multinacionales, tanto en la constitución de sociedades como en el diseño e su estructura de funcionamiento.
+                span  Especializado en Derecho fiscal, Master en Derecho ambiental. 
+                b Executive en Compliance Penal
+                |  avalado por el
+                b  Consejo General de la Abogacia
+                | . Compliance Officer experto por THOMPSON REUTERS ARANZADI y en Responsabilidad de los Administradores Societarios. Por el ICAM.
+              //-
+                <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                </ul>
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/dist/team/j_j_blanco.jpg', alt='Juan José Blanco, licenciado en Administración y Dirección de Empresas y master bancario', title='Juan José Blanco, licenciado en Administración y Dirección de Empresas y master bancario')
+              h4
+                | Juan José 
+                span Blanco
+              h5.text-muted Socio Director
+              p.text-muted
+                | Licenciado en 
+                b Administración y Dirección de Empresas especializado en Dirección Financiera
+                | por la Universidad Complutense de Madrid. 
+                b MBA en Bolsa y Mercados Financieros
+                |  (IEB). Más de 
+                span 20 años de experiencia en sector financiero en las áreas de Banca Privada y Banca de Inversión
+                |  (BBVA y BANIF). Actualmente, desarrolla su actividad profesional sobren dos líneas de negocio, la primera de ellas relacionada con la 
+                b captación de Talento a diferentes niveles estratégicos
+                |  (Head Hunter) y como segunda línea de negocio se centra en las 
+                b operaciones de Corporate Finance
+                | .
+              //-
+                <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                </ul>
+        //- /.row
+        .row
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/dist/team/j_pena.jpg', alt='Juan José Blanco, abogado asesor de empresas nacionales y multinacionales', title='Juan José Blanco, abogado asesor de empresas nacionales y multinacionales')
+              h4
+                | Juan María 
+                span Pena Lasso
+              h5.text-muted Socio Director
+              p.text-muted
+                | Abogado, con más de 
+                span 25 años de experiencia en el asesoramiento de empresas nacionales y multinacionales
+                | , tanto en la prevención como en la litigación de 
+                b asuntos penales
+                | , 
+                b civiles
+                |  y 
+                b mercantiles
+                | . Especializado en responsabilidad civil y penal de personas físicas y jurídicas, tanto en la valoración del daño sufrido, su compensación y reclamación, como en la prevención y minoración del mismo. 
+                span Executive en Compliance Penal
+                |  avalado por el Consejo General de la Abogacia.
+              //-
+                <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                </ul>
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/dist/team/l_puebla.jpg', alt='Laura Puebla, ...', title='Laura Puebla, ...')
+              h4
+                | Laura 
+                span Puebla
+              h5.text-muted Abogado asociado
+              p.text-muted
+                | Licenciada en Derecho con mas de
+                span  20 años de experiencia en derecho Mercantil y de Empresa
+                | . Experta en
+                b  RSC (Responsabilidad Corporativa)
+                | ,
+                b  asesoría de empresas
+                |  (fiscal, laboral y mercantil) así como
+                b  consultoría empresarial
+                | : planes de viabilidad, estudios de mercado, pan anticrisis, reflotamiento empresarial, búsqueda de financiación, staff externo, desarrollo de negocio, internacionalización, comercio exterior...
+              //-
+                <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                </ul>
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/dist/team/s_amadeo.jpg', alt='Sergio Amadeo, abogado especialista en criminología y delitos económicos', title='Sergio Amadeo, abogado especialista en criminología y delitos económicos')
+              h4
+                | Sergio 
+                span Amadeo
+              h5.text-muted Abogado asociado
+              p.text-muted
+                | Abogado, especialista en criminología, con más de 
+                span 20 años de experiencia en la práctica de tribunales
+                |  defendiendo, todo tipo de causas penales, en especial 
+                span delitos económicos
+                | , 
+                span estafa
+                | , 
+                span blanqueo de capitales
+                |  y otros asuntos relacionados con el 
+                b mundo empresarial
+                | . Autor de múltiples artículos y monografías, destacando la reciente 
+                b publicación del Código Penal Comentado
+                | , con Doctrina, y Jurisprudencia.
+              //-
+                <ul class="list-inline social-buttons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                </ul>
+        //- /.row
+        //-
+          Last block text of "Our Team" Section:
+          <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
+          </div>
+    //- CLIENTS (section)
+    aside.clients
+      h5.text-muted Algunos de nuestros clientes
+      .row
+        .col-md-2.col-sm-4
+          a(href='http://abrautomotor.com/', target='_blank', title='Abrauto Motor, concesionario en Madrid')
+            img.img-responsive.img-centered(src='img/dist/logos/abrauto-motor.jpg', alt='Abrauto Motor, concesionario en Madrid', title='Abrauto Motor, concesionario en Madrid')
+        .col-md-2.col-sm-4
+          a(href='http://tampico.es/', target='_blank', title='Tampico multinacional líder de bebidas')
+            img.img-responsive.img-centered(src='img/dist/logos/tampico.jpg', alt='Tampico multinacional líder de bebidas', ,='', title='Tampico multinacional líder de bebidas')
+        .col-md-2.col-sm-4
+          a(href='http://remax.es/', target='_blank', title='Remax propiedades inmobiliarias en alquiler o venta')
+            img.img-responsive.img-centered(src='img/dist/logos/remax.jpg', alt='Remax propiedades inmobiliarias en alquiler o venta', ,='', title='Remax propiedades inmobiliarias en alquiler o venta')
+        .col-md-2.col-sm-4
+          a(href='https://es-es.facebook.com/INDUSTRIAS-CARNICAS-ALONSO-SL-217762568256282/', ,='', target='_blank', title='Industrias Cárnicas Alonso, S.L.')
+            img.img-responsive.img-centered(src='img/dist/logos/carnicas-alonso.jpg', alt='Industrias Cárnicas Alonso, S.L.', ,='', title='Industrias Cárnicas Alonso, S.L.')
+        .col-md-2.col-sm-4
+          a(href='http://www.promopicking.com/', target='_blank', title='Promopicking: marketing Promocional, logistica, almacenaje, trabajos de manipulación y retractilado')
+            img.img-responsive.img-centered(src='img/dist/logos/promo-picking.jpg', alt='Promopicking: marketing Promocional, logistica, almacenaje, trabajos de manipulación y retractilado', title='Promopicking: marketing Promocional, logistica, almacenaje, trabajos de manipulación y retractilado')
+        .col-md-2.col-sm-4
+          a(href='http://strategos-consultores.com/', target='_blank', title='Strategos: ayudamos a las empresas en tres momentos cruciales')
+            img.img-responsive.img-centered(src='img/dist/logos/strategos.jpg', alt='Strategos: ayudamos a las empresas en tres momentos cruciales', title='Strategos: ayudamos a las empresas en tres momentos cruciales')
+    //- CONTACT (section)
     section#contact
       .container
         .row
@@ -243,6 +719,7 @@ html(lang='es')
               a(href='mailto:info@lfcabogados.com', title='Escribir email a LFC Abogados y Economistas')
                 i.fa.fa-envelope
                 |  info@lfcabogados.com
+    //- FOOTER common
     footer
       .main-footer
         .container
@@ -263,7 +740,7 @@ html(lang='es')
             .col-md-4.text-right
               ul.list-inline.quicklinks
                 li
-                  a.anim-hover(href='index.html') Sobre LFC Abogados y Economistas.
+                  a.anim-hover(href='legal.html') Términos legales y condiciones de uso.
             .clearfix
       .sub-footer
         .container
@@ -274,6 +751,653 @@ html(lang='es')
               span.copyright
                 | Desarrollado y diseñado por 
                 a(href='http://arted.es/', title='Arted, diseño gráfico y desarrollo web') arted.es
+    //- all website MODALS dialogs
+    //- Use the modals below to showcase details about your portfolio projects!
+    //- 01. CÓDIGO ÉTICO :: modal dialog
+    #codigo-etico.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Definir o adaptar el 
+                  span Código ético
+                  |  de su 
+                  span empresa
+                  | .
+                p.item-intro.text-muted Ayudarle a definir o adaptar un código de buen gobierno de su empresa.
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/codigo-etico-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Desde el año 1998 en que se publicó el 
+                  span Informe Olivencia o Código de buen gobierno corporativo
+                  | , las empresas han ido preocupándose de adaptar su funcionamiento a las recomendaciones contenidas en esos códigos. El 24 de febrero de 2015 la CNMV publico el llamado 
+                  span Código Rodriguez
+                  | , titulado “NUEVO CÓDIGO UNIFICADO DE BUEN GOBIERNO DE LAS  SOCIEDADES COTIZADAS”.
+                p
+                  | Dicho texto contiene una serie de recomendaciones de la CNMV para el buen gobierno de las empresas cotizadas. Lógicamente dichas recomendaciones no son de obligado cumplimiento y menos para las sociedades no cotizadas. Sin embargo adaptar el gobierno de su sociedad a dichas recomendaciones, o al menos a alguna de ellas supone un valor añadido para la misma.
+                p
+                  | Las recomendaciones abarcan un amplio abanico de materias que van desde 
+                  span la composición y funcionamiento del órgano de administración y su retribución
+                  | , hasta la 
+                  span política de Responsabilidad Social Corporativa (RCS)
+                  | .
+                p
+                  | Nos encargamos de analizar junto con Ud. las distintas recomendaciones para adaptar todas o alguna de ellas al normal funcionamiento de su empresa.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 02. RIESGOS PENALES :: modal dialog
+    #riesgos-penales.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Elaborar un Mapa de 
+                  span riesgos penales
+                  | .
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/mapa-riesgos-penales-modal.jpg', alt='')
+                p
+                  | La Ley Orgánica 1/2015, de 30 de marzo, de modificación del Código penal clarifica y determina los requisitos de los procedimientos y controles de prevención que requiere como elementos para 
+                  span
+                    | definir la posible Responsabilidad Penal de la empresa y los administradores de hecho/derecho
+                  | .
+                p
+                  | Los requisitos de los procedimientos establecen una guía de actuación para una mayor garantía jurídica y determinan el marco de excepción o atenuación de la responsabilidad penal de la empresa y sus directivos. Dentro de los requisitos de control preventivo que contempla el CP, el más importante es la ELABORACIÓN DE UN MAPA DE RIESGOS PENALES, que consiste en 
+                  span
+                    | Identificar las actividades en cuyo ámbito puedan ser cometidos delitos que deben ser objeto de establecimiento de medidas de prevención y control
+                  | .
+                p
+                  b No todos los delitos
+                  |  contemplados en el CP 
+                  b son susceptibles de ser cometidos por las personas jurídicas
+                  | . A título de ejemplo podemos citar:
+                ul
+                  li
+                    | Delitos contra la intimidad y allanamiento informático 
+                    em (art. 197)
+                    | .
+                  li
+                    | Estafas propias e impropias 
+                    em (art. 251 bis)
+                    | .
+                  li
+                    | Insolvencias punibles: alzamientos y concursos punibles 
+                    em (art. 261 bis)
+                    | .
+                  li
+                    | Daños informáticos y hacking 
+                    em (art. 264)
+                    | .
+                  li
+                    | Delitos contra la propiedad intelectual e industrial 
+                    em (art. 288)
+                    | .
+                  li
+                    | Delitos contra el mercado y los consumidores 
+                    em (art. 288)
+                    | . Incluyen a su vez:
+                  li.sublist
+                    | Descubrimiento y revelación de secretos de empresa 
+                    em (arts. 278 a 280)
+                    | .
+                  li.sublist
+                    | Desabastecimiento de materias primas 
+                    em (art. 281)
+                    | .
+                  li.sublist
+                    | Publicidad engañosa 
+                    em (art. 282)
+                    | .
+                  li.sublist
+                    | Fraude de inversores y de crédito 
+                    em (art. 282 bis)
+                    | .
+                  li.sublist
+                    | Facturación fraudulenta 
+                    em (art. 283)
+                    | .
+                  li.sublist
+                    | Manipulación de cotizaciones en los mercados 
+                    em (art. 284.1 y 2)
+                    | .
+                  li.sublist
+                    | Abuso de información privilegiada 
+                    em (arts. 284.3 y 285)
+                    | .
+                  li.sublist
+                    | Facilitación ilegal de acceso a servicios de radiodifusión y televisión 
+                    em (art. 286)
+                    | .
+                  li.sublist
+                    | Corrupción entre particulares y deportiva 
+                    em (art. 286 bis)
+                    | .
+                  li
+                    | Blanqueo de capitales 
+                    em (art. 302)
+                    | .
+                  li
+                    | Delitos contra la Hacienda Pública y la Seguridad Social 
+                    em (art. 310 bis)
+                    | .
+                  li
+                    | Delitos contra los derechos de los ciudadanos extranjeros 
+                    em (art. 318 bis)
+                    | .
+                  li
+                    | Delito sobre la ordenación del territorio 
+                    em (art. 319)
+                    | .
+                  li
+                    | Delitos contra los recursos naturales y el medio ambiente 
+                    em (art. 327 y 328)
+                    | .
+                  li
+                    | Delitos relativos a la energía nuclear y a las radiaciones ionizantes 
+                    em (art. 343)
+                    | .
+                  li
+                    | Delitos de riesgo provocado por explosivos 
+                    em (art. 348)
+                    | .
+                  li
+                    | Cohecho 
+                    em (art. 427)
+                    | .
+                  li
+                    | Tráfico de influencias 
+                    em (art. 430)
+                    | .
+                  li
+                    | Corrupción de funcionario extranjero 
+                    em (art. 445)
+                    | .
+                p
+                  | El mapa de riesgos penales estudia la posibilidad de comisión de alguno de estos tipos dentro de su empresa clasificándolos de mayor a menor riesgo en función de la posible frecuencia de su comisión y la intensidad del impacto del mismo en su cuenta de resultados, incluyendo el riesgo reputacional de su comisión.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 03. IDENTIFICAR PROCESOS Y CONTROLES EXISTENTES :: modal dialog
+    #identificar-procesos.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Identificar 
+                  span procesos y controles
+                  |  existentes.
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/identificar-procesos-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  span Analizados los riesgos penales
+                  | , en una segunda fase, se procede a identificar los procesos internos existentes en los que pueda residir 
+                  span el riesgo de incumplimiento de las normas penales
+                  | , proponiendo la implantación de 
+                  span mejoras en los procesos
+                  | , que minimicen el riesgo y controles del buen funcionamiento de los mismos.
+                p
+                  | La elaboración de un mapa de procesos y controles permite visualizar fácilmente 
+                  span los puntos críticos de la gestión de la empresa
+                  | , facilitando la toma de decisiones en la adopción de medidas de reducción del riesgo en toda la estructura empresarial.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 04. ELABORACION DE UN PLAN DE PREVENCION PENAL :: modal dialog
+    #prevencion-penal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Elaboración de un 
+                  span plan de prevención penal
+                  | .
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/prevencion-penal-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Diseñamos para su empresa un 
+                  span Plan de Prevención Penal (PPP)
+                  |  adaptado a los requisitos exigidos por la 
+                  em Ley Orgánica 1/2015 de Reforma del Código Penal
+                  | .
+                p
+                  | Los requisitos que debe cumplir un plan de prevencion de riesgos penales para que la sociedad quede exenta de responsabilidad penal son:
+                ul
+                  li
+                    b a)
+                    |  Identificarán las actividades en cuyo ámbito puedan ser cometidos los delitos que deben ser prevenidos. Es decir, deberá elaborarse un INFORME DE RIEGO ESPECIFICO que contemple todos los posibles delitos que puedan cometerse en el seno de la empresa.
+                  li
+                    b b)
+                    |  Establecerán los protocolos o procedimientos que concreten el proceso de formación de la voluntad de la persona jurídica, de adopción de decisiones y de ejecución de las mismas con relación a aquéllos.
+                  li
+                    b c)
+                    |  Dispondrán de modelos de gestión de los recursos financieros adecuados para impedir la comisión de los delitos que deben ser prevenidos.
+                  li
+                    b d)
+                    |  Impondrán la obligación de informar de posibles riesgos e incumplimientos al organismo encargado de vigilar el funcionamiento y observancia del modelo de prevención.
+                  li
+                    b e)
+                    |  Establecerán un sistema disciplinario que sancione adecuadamente el incumplimiento de las medidas que establezca el modelo.
+                  li
+                    b f)
+                    |  Realizarán una verificación periódica del modelo y de su eventual modificación cuando se pongan de manifiesto infracciones relevantes de sus disposiciones, o cuando se produzcan cambios en la organización, en la estructura de control o en la actividad desarrollada que los hagan necesarios.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 05. ESTABLECER PROTOCOLOS QUE CONCRETEN EL PROCESO DE FORMACION... :: modal dialog
+    #protocolos-juridicos.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Formación de 
+                  span la voluntad
+                  |  de la 
+                  span persona jurídica
+                  | .
+                p.item-intro.text-muted
+                  | Establecer protocolos que concreten el proceso de formación de la voluntad de la persona jurídica.
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/protocolos-juridicos-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Los protocolos de 
+                  span
+                    | toma de decisiones exigidos en el Código Penal y en la Ley de Sociedades de Capital
+                  |  deben garantizar que en el proceso de formación de la voluntad societaria se solicite la opinión del equipo de Compliance y ésta se tenga en cuenta.
+                p
+                  | La respuesta a esta consulta demostrará si 
+                  span la función de Compliance es independiente o no en cada empresa
+                  | .
+                p
+                  | Aunque parezca extraño en muchas ocasiones, o no se consulta, o no se tiene en cuenta la opinión del equipo de Compliance, como fue el caso 
+                  b Commerzbank
+                  |  en el que el equipo de Compliance alertó sobre determinados riesgos legales y la dirección de la entidad tomó presuntamente sus decisiones a pesar de dichas advertencias. O el caso 
+                  b Banco Madrid
+                  |  en que el Consejo de Administración desoyó la opinión desfavorable del ComplianceOfficer.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 06. CANAL ETICO O SISTEMA DE DENUNCIA :: modal dialog
+    #canal-etico.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Diseño y gestión de 
+                  span canal ético
+                  |  o 
+                  span sistema de denuncias
+                  | .
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/canal-etico-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Los beneficios de la implementación de un 
+                  span Canal Ético
+                  |  son:
+                ul
+                  li
+                    b a)
+                    |  Reducción de la probabilidad de fraudes internos y comportamientos antiéticos;
+                  li
+                    b b)
+                    |  Una cultura de lucha contra el fraude y el comportamiento antiético dentro de la compañía;
+                  li
+                    b c)
+                    |  Capacidad para reunir y suministrar a la alta gerencia una retroalimentación en cuanto a la operación e implementación del Código de conducta y del Código de gobierno corporativo y trabajo interno;
+                  li
+                    b d)
+                    |  Una garantía de confianza y transparencia para los grupos de interés de la compañía; y
+                  li
+                    b e)
+                    |  Una reputación más sólida de la compañía.
+                p
+                  | Los empleados y grupos de interés de una empresa deben confiar en que sus 
+                  span
+                    | denuncias serán tratadas con seriedad y manejadas de manera profesional y confidencial
+                  |  y que los resultados bien pueden tener un efecto en la forma en que opera la compañía y en la forma en que maneja los problemas denunciados a través de la línea directa.
+                p
+                  | Es claro entonces que el canal ético seguirá desempeñando un papel importante en el Programa de cumplimiento y siendo un motor para 
+                  span
+                    | mejorar procesos y procedimientos, mitigar riesgos y evitar y reducir comportamientos indebidos
+                  | .
+                p
+                  | Las razones que pueden impedirle a una persona recurrir a canal ético generalmente se relacionan con 
+                  span el miedo a perder el trabajo
+                  |  o a 
+                  span ser sometida a otras formas de represalia
+                  | , o la creencia de que el problema no va a ser manejado satisfactoriamente, o quizás de ninguna manera, por quienes reciban el informe.
+                p
+                  | Para manejar estos miedos y asegurar la efectividad de los canales éticos, se requieren mensajes claros que eduquen a los empleados sobre cómo y cuándo denunciar y el significado de la política de cero represalias. También se debe organizar la repetición regular de estos mensajes con campañas de seguimiento de la concienciación. Elevar la calidad de las denuncias y generar confianza en que los problemas serán manejados en un ambiente seguro para el denunciante es importante. Igual de crucial es 
+                  span la calidad y transparencia de los procedimientos de investigación
+                  |  y la visibilidad del resultado de una investigación (cuando sea apropiado y legalmente permitido).
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 07. SISTEMA DISCIPLINARIO :: modal dialog
+    #sistema-disciplinario.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Sistema 
+                  span disciplinario
+                  | .
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/sistema-disciplinario-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Una de las cuestiones más espinosas que plantea el régimen de 
+                  span responsabilidad penal de las personas jurídicas
+                  | , a raíz de la reforma operada por la 
+                  em Ley Orgánica 1/2015 de reforma del Código Penal
+                  | , es el requisito del 
+                  em artículo 31. Bis 5
+                  | , según el cual los modelos de organización y gestión “establecerán un sistema disciplinario que sancione adecuadamente el incumplimiento de las medidas que establezca el modelo”.
+                p
+                  | El problema estriba en el riesgo de colisión entre el sistema disciplinario establecido en el modelo de compliance y el sistema disciplinario regulado en la normativa laboral, tanto en las disposiciones generales como en los convenios colectivos aplicables. No parece razonable que la adopción de un plan de compliance, suponga para las empresas una habilitación general para establecer, sobre unas tablas en blanco, un listado de infracciones y sanciones contra el modelo de prevención. Por el contrario, habrá que tratar de 
+                  span
+                    | conciliar el sistema sancionador del modelo con los principios y normas del derecho laboral
+                  | .
+                p
+                  | Dentro de este marco, podemos distinguir 
+                  b dos tipos de conductas sancionables
+                  |  en relación con los modelos de prevención.
+                p
+                  | En primer lugar, 
+                  span la comisión de conductas tipificadas como delito en el ámbito de la empresa
+                  | , que no ofrecen ninguna duda. La jurisprudencia y doctrina laboral son claras en la consideración de que la realización de hechos delictivos en el ámbito laboral supone una vulneración clara de la buena fe contractual y, en consecuencia, constituye una causa clara de despido disciplinario tipificada en el 
+                  em artículo 54.2 d) del ET
+                  | .
+                p
+                  | Consecuentemente, el régimen sancionador en materia de incumplimiento de la obligación genérica de abstenerse de realizar conductas delictivas, se materializará en el despido disciplinario del autor del delito, así como de todos aquellos que, intencionadamente, colaboren con él o le encubran.
+                p
+                  | En segundo lugar, se plantea la habilitación para 
+                  span
+                    | sancionar la vulneración de las medidas específicas de detección y prevención de delitos que establezca el modelo
+                  | . En este aspecto entendemos que para la aplicación del sistema sancionador será necesario que el directivo o trabajador haya sido informado específicamente de las obligaciones impuestas por el modelo, de modo que la transgresión de las mismas constituya un supuesto de desobediencia o indisciplina, expresamente recogido en el 
+                  em apartado 2.b) del artículo 54 del ET
+                  | .
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 08. PLAN DE FORMACIÓN :: modal dialog
+    #plan-formacion.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Plan de 
+                  span formación
+                  | .
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/plan-formacion-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Un sistema de cumplimiento normativo no se adquiere sólo controlando el comportamiento de las personas, sino logrando que 
+                  span interioricen una serie de valores, compromisos y conductas
+                  | .
+                p
+                  | En este sentido, la formación y la sensibilización son herramientas esenciales para la función del Cumplimiento Normativo, con 
+                  span ciclos formativos internos
+                  | .
+                p
+                  | Por tanto, el éxito del programa de Compliance se basa en establecer acciones de formación que garanticen que 
+                  span los empleados entienden qué se espera de ellos
+                  | . El principal factor de calidad de la formación es que se adecúe la formación al puesto y a los riesgos de cada departamento.
+                p
+                  | Tras haberse evaluado las conductas de riesgo de la empresa y redactado el Compliance penal, se iniciará una formación a los empleados y esta 
+                  span formación debe ser periódica y tiene como objetivo
+                  | :
+                p
+                  | Que los trabajadores conozcan 
+                  span qué pueden y qué no pueden hacer
+                  | .
+                p
+                  | Que la empresa pueda acreditar que ha implementado medidas idóneas para 
+                  span la prevención del delito
+                  | .
+                p
+                  | Desarrollar la 
+                  span cultura del cumplimiento
+                  |  en la empresa y el 
+                  span compromiso de mejora continua
+                  | .
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 09. VERIFICACIÓN PERIDICA DEL PPP Y CERTIFICACIÓN :: modal dialog
+    #verificacion-ppp.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  span Verificación periódica
+                  |  del 
+                  span PPP
+                  |  y certificación.
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/verificacion-ppp-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Un modelo de prevención penal no es una mera formalidad, debiendo ser capaz de prevenir, detectar y gestionar los riesgos propios de su ámbito. Para ello, se 
+                  span ceñirá a las circunstancias de cada organización
+                  |  y estará preparado para 
+                  span adaptarse a sus eventuales variaciones
+                  | . Se trata de un factor obvio de eficacia, que evita que el modelo devenga obsoleto y pierda su utilidad con el transcurso del tiempo. Los estándares internacionales sobre Compliance hacen hincapié en ello, hablando de la mejora continua de los modelos, su monitorización, etc.
+                p
+                  | Desde una perspectiva temporal, 
+                  span
+                    | las verificaciones del modelo de prevención penal pueden ser programadas o sobrevenidas
+                  | . Las primeras se desarrollan de manera periódica, sin que concurran circunstancias especiales que determinen su ejecución, mientras que las segundas se producen ante situaciones especiales, como son la materialización de riesgos o el cambio de circunstancias internas o externas de la organización.
+                p
+                  | El 
+                  b Código Penal
+                  |  se refiere exclusivamente a esta última tipología, cuando exige “una verificación periódica del modelo y de su eventual modificación cuando se pongan de manifiesto infracciones relevantes de sus disposiciones, o cuando se produzcan cambios en la organización, en la estructura de control o en la actividad desarrollada que los hagan necesarios”.
+                p
+                  | Cumpliendo la literalidad de la norma, 
+                  span podría no verificarse el modelo si la organizaciónes estable
+                  |  y no han concurrido tales circunstancias, pero eso supondría desviarse de las buenas prácticas que recomiendan los estándares internacionales.
+                p
+                  | En modelos de prevención penal maduros, la documentación que acredite la ejecución de las verificaciones y el análisis comparativo de tales documentos permite, tanto al órgano de prevención penal como a la máxima dirección de la sociedad, comprender la 
+                  span evolución de la organización en materia de prevención penal
+                  | .
+                p
+                  | Actualmente no es posible certificar la bondad del PPP ya que la única norma que lo regula es el Código Penal y su interpretación está encomendada a nuestros Jueces y Tribunales. Lo que sí cabe es acreditar mediante la verificación periódica y la contrastación del cumplimiento y desarrollo del PPP, el 
+                  span
+                    | compromiso de la Alta Dirección de la empresa con las prácticas de buen gobierno y la cultura del Cumplimiento
+                  | .
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 10. PROTECCION DEL PATRIMONIO DE LOS ACCIONISTAS :: modal dialog
+    #patrimonio-accionista.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Protección 
+                  span patrimonio
+                  |  de los 
+                  span accionistas
+                  | .
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/patrimonio-accionista-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | El 
+                  em artículo 33.7 del CP
+                  |  establece las penas aplicables a las personas jurídicas, son las siguientes:
+                ul
+                  li
+                    b a)
+                    |  Multa por cuotas o proporcional.
+                  li
+                    b b)
+                    |  Disolución de la persona jurídica. La disolución producirá la pérdida definitiva de su personalidad jurídica, así como la de su capacidad de actuar de cualquier modo en el tráfico jurídico, o llevar a cabo cualquier clase de actividad, aunque sea lícita.
+                  li
+                    b c)
+                    |  Suspensión de sus actividades por un plazo que no podrá exceder de cinco años.
+                  li
+                    b d)
+                    |  Clausura de sus locales y establecimientos por un plazo que no podrá exceder de cinco años.
+                  li
+                    b e)
+                    |  Prohibición de realizar en el futuro las actividades en cuyo ejercicio se haya cometido, favorecido o encubierto el delito. Esta prohibición podrá ser temporal o definitiva. Si fuere temporal, el plazo no podrá exceder de quince años.
+                  li
+                    b f)
+                    |  Inhabilitación para obtener subvenciones y ayudas públicas, para contratar con el sector público y para gozar de beneficios e incentivos fiscales o de la Seguridad Social, por un plazo que no podrá exceder de quince años.
+                  li
+                    b g)
+                    |  Intervención judicial para salvaguardar los derechos de los trabajadores o de los acreedores por el tiempo que se estime necesario, que no podrá exceder de cinco años.
+                p
+                  | La intervención podrá afectar a la 
+                  span totalidad de la organización
+                  |  o 
+                  span limitarse a alguna de sus instalaciones
+                  | , secciones o unidades de negocio. El Juez o Tribunal, en la sentencia o, posteriormente, mediante auto, determinará exactamente el contenido de la intervención y determinará quién se hará cargo de la intervención y en qué plazos deberá realizar informes de seguimiento para el órgano judicial. La intervención se podrá modificar o suspender en todo momento previo informe del interventor y del Ministerio Fiscal. El interventor tendrá derecho a acceder a todas las instalaciones y locales de la empresa o persona jurídica y a recibir cuanta información estime necesaria para el ejercicio de sus funciones. Reglamentariamente se determinarán los aspectos relacionados con el ejercicio de la función de interventor, como la retribución o la cualificación necesaria.
+                p
+                  | La 
+                  span clausura temporal de los locales
+                  |  o establecimientos, la 
+                  span suspensión de las actividades sociales
+                  |  y la 
+                  span intervención judicial
+                  |  podrán ser acordadas también por el Juez Instructor como medida cautelar durante la instrucción de la causa.
+                p
+                  | Todas ellas de un modo u otro afectan al normal desarrollo de la actividad y tienen un importante 
+                  span impacto en la cuenta de resultados de la empresa
+                  | , sin entrar a valorar la pena de disolución de la sociedad que equivale a su muerte mercantil, tanto la Inhabilitación para obtener ayudas y subvenciones públicas, como al suspensión total parcial de actividad, suponen una notable disminución de ingresos, que inciden en la cuenta de resultados y en el valor de la empresa en el mercado. 
+                  span El accionista debe velar por el rendimiento de su inversión
+                  |  y exigir a la dirección la implementación de planes de prevención que eviten la comisión de conductas punibles.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
+    //- 11. RESPONSABILIDAD CIVIL Y PENAL DE ADMINISTRADORES DIRECTIVOS Y MANDOS INTERMEDIOS. :: modal dialog
+    #responsabilidad-civil.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                //- Main Title & SubTitle
+                h2
+                  | Responsabilidad de los 
+                  span administradores
+                  | .
+                p.item-intro.text-muted
+                  | Responsabilidad civil y penal de los administradores, directivos y mandos intermedios.
+                //- img & fullText
+                img.img-responsive.img-centered(src='img/dist/portfolio/responsabilidad-civil-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | Los 
+                  span deberes de los Administradores
+                  |  y la consecuente responsabilidad civil por incumplimiento de los mismos se haya regulada en los 
+                  em
+                    | artículos 225 a 232 y 236 a 241 respectivamente de la Ley de Sociedades de Capital
+                  | . Este régimen de responsabilidad es 
+                  span extensivo a los altos directivos de la empresa
+                  |  en virtud de lo dispuesto en el 
+                  em art. 236.4 LSC
+                  | : “Cuando no exista delegación permanente de facultades del consejo en uno o varios consejeros delegados, todas las disposiciones sobre deberes y responsabilidad de los administradores serán aplicables a la persona, cualquiera que sea su denominación, que tenga atribuidas facultades de más alta dirección de la sociedad, sin perjuicio de las acciones de la sociedad basadas en su relación jurídica con ella.”
+                p
+                  | La 
+                  span responsabilidad penal
+                  |  de los mismos viene establecida en el 
+                  em art. 31 del Código Penal
+                  | : “El que actúe como administrador de hecho o de derecho de una persona jurídica, o en nombre o representación legal o voluntaria de otro, responderá personalmente, aunque no concurran en él las condiciones, cualidades o relaciones que la correspondiente figura de delito requiera para poder ser sujeto activo del mismo, si tales circunstancias se dan en la entidad o persona en cuyo nombre o representación obre.”
+                p
+                  | Dejando a un lado la comisión de delitos por hechos propios como puede ser la Administración desleal o la apropiación indebida, los administradores de derecho o de hecho (Altos directivos) pueden resultar 
+                  span incriminados por hechos cometidos por otros miembros de la sociedad
+                  |  en virtud de lo que se ha llamado el triangulo de responsabilidad creado por la aplicación de los 
+                  em artículos 31 Bis y 31 del CP
+                  |  que esquemáticamente consistiría en:
+                img.img-responsive.img-centered(src='img/dist/portfolio/triangulo-responsabilidad-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                p
+                  | La única forma de evitar que los hechos delictivos de los dependientes de la sociedad lleguen a suponer responsabilidad penal personal de los administradores de derecho o de hecho, es impedir la 
+                  span
+                    | transferencia de la responsabilidad de los actos del personal de la empresa a la propia empresa
+                  |  por vía del 
+                  em art. 31 Bis CP
+                  | , evitando así el siguiente paso del 
+                  em art. 31 CP
+                  | , es decir la responsabilidad penal personal del administrador de la sociedad condenada o investigada por vía del 
+                  em art. 31
+                  | , y esto se consigue a través de la eximente de tener elaborado un plan de prevención penal o Compliance Penal (PPP) adaptado a las exigencias del 
+                  em art. 31 Bis
+                  |  y siguientes del CP.
+                //- close BUTTON
+                button.btn.btn-primary.anim-hover(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Cerrar
     //- jQuery
     script(src='js/dist/jquery.min.js')
     //- Bootstrap Core JavaScript
@@ -283,4 +1407,4 @@ html(lang='es')
     //- Less JavaScript
     script(src='js/dist/less.min.js')
     //- other javascripts
-    script(src='js/dist/otherscripts.js')
+    script(src='js/dist/otherscripts.js') 

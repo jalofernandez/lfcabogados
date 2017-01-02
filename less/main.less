@@ -24,6 +24,19 @@ body {
     webkit-tap-highlight-color: @lightcoral;
 }
 
+/* ............ CUSTOM SCROLL BAR .................................................... */
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: @main-color;
+  border: 0px none @white;
+  border-radius: 10px;
+}
+
 /* ............ TEXT SELECTOR .................................................... */
 
 ::-webkit-selection {
@@ -386,7 +399,10 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0;
+        padding-left: 0;
         background-color: @white;
         
         .navbar-brand {

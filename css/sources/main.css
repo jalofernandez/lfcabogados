@@ -186,6 +186,16 @@ body {
 body {
   webkit-tap-highlight-color: lightcoral;
 }
+/* ............ CUSTOM SCROLL BAR .................................................... */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c06169;
+  border: 0px none #fff;
+  border-radius: 10px;
+}
 /* ............ TEXT SELECTOR .................................................... */
 ::-webkit-selection {
   background-color: lightcoral;
@@ -495,7 +505,10 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
   .navbar-default.navbar-shrink {
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
     background-color: #fff;
   }
   .navbar-default.navbar-shrink .navbar-brand {

@@ -33,6 +33,17 @@ gulp.task('js', function () {
 });
 
 /*
+* Configuración de la tarea 'less' --> gulp-less (gulp less)
+*/
+gulp.task('less', function () {
+  return gulp.src('./less/**/[^_]*.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('./css/sources'));
+});
+
+/*
 * Configuración de la tarea 'css' --> gulp-clean-css (gulp css)
 */
 gulp.task('css', function() {
@@ -49,16 +60,7 @@ gulp.task('img', function () {
         .pipe(imagemin())
         .pipe(gulp.dest('img/dist'));
 });
-/*
-* Configuración de la tarea 'less' --> gulp-less (gulp less)
-*/
-gulp.task('less', function () {
-  return gulp.src('./less/**/[^_]*.less')
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(gulp.dest('./css/sources'));
-});
+
 /*
 * Configuración de la tarea 'jade' --> gulp-jade (gulp jade)
 */
@@ -70,6 +72,7 @@ gulp.task('jade', function () {
     }))
     .pipe(gulp.dest('./'));
 });
+
 /*
 * Configuración de la tarea 'sitemap' --> gulp-sitemap (gulp sitemap)
 */

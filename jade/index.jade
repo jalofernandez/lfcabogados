@@ -39,23 +39,23 @@ html(lang='es')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand.page-scroll(href='#page-top')
-            img(src='img/dist/common/lfc_logo.svg', alt='LFC, abogados especilaistas en compliance', title='LFC, abogados especilaistas en compliance')
+          a.navbar-brand.page-scroll(href='#page-top', alt='Logotipo de LFC, abogados especialistas en compliance')
+            img(src='img/dist/common/lfc_logo.svg', alt='LFC, abogados especialistas en compliance', title='LFC, abogados especialistas en compliance')
         //- Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse.animated.fadeIn
           ul.nav.navbar-nav.navbar-right
             li.hidden
-              a(href='#page-top')
+              a(href='#page-top', alt='Page top')
             li
-              a.page-scroll(href='#services') Compliance legal
+              a.page-scroll(href='#services', alt='Ir a Compliance legal') Compliance legal
             li
-              a.page-scroll(href='#finance') Corporate Finance
+              a.page-scroll(href='#finance', alt='Ir a Corporate Finance') Corporate Finance
             li
-              a.page-scroll(href='#others') Otros servicios
+              a.page-scroll(href='#others', alt='Ir a Otros servicios') Otros servicios
             li
-              a.page-scroll(href='#team') Equipo
+              a.page-scroll(href='#team', alt='Ir a Equipo') Equipo
             li
-              a.page-scroll(href='#contact') Contacto
+              a.page-scroll(href='#contact', alt='Ir a Contacto') Contacto
         //- /.navbar-collapse
       //- /.container-fluid
     //- Header
@@ -617,7 +617,7 @@ html(lang='es')
                 </ul>
           .col-sm-4
             .team-member
-              img.img-responsive.img-circle(src='img/dist/team/l_puebla.jpg', alt='Laura Puebla, ...', title='Laura Puebla, ...')
+              img.img-responsive.img-circle(src='img/dist/team/l_puebla.jpg', alt='Laura Puebla, abogada en derecho Mercantil y de Empresa', title='Laura Puebla, abogada en derecho Mercantil y de Empresa')
               h4
                 | Laura 
                 span Puebla
@@ -688,13 +688,13 @@ html(lang='es')
             img.img-responsive.img-centered(src='img/dist/logos/abrauto-motor.jpg', alt='Abrauto Motor, concesionario en Madrid', title='Abrauto Motor, concesionario en Madrid')
         .col-md-2.col-sm-4
           a(href='http://tampico.es/', target='_blank', title='Tampico multinacional líder de bebidas')
-            img.img-responsive.img-centered(src='img/dist/logos/tampico.jpg', alt='Tampico multinacional líder de bebidas', ,='', title='Tampico multinacional líder de bebidas')
+            img.img-responsive.img-centered(src='img/dist/logos/tampico.jpg', alt='Tampico multinacional líder de bebidas', title='Tampico multinacional líder de bebidas')
         .col-md-2.col-sm-4
           a(href='http://remax.es/', target='_blank', title='Remax propiedades inmobiliarias en alquiler o venta')
-            img.img-responsive.img-centered(src='img/dist/logos/remax.jpg', alt='Remax propiedades inmobiliarias en alquiler o venta', ,='', title='Remax propiedades inmobiliarias en alquiler o venta')
+            img.img-responsive.img-centered(src='img/dist/logos/remax.jpg', alt='Remax propiedades inmobiliarias en alquiler o venta', title='Remax propiedades inmobiliarias en alquiler o venta')
         .col-md-2.col-sm-4
-          a(href='https://es-es.facebook.com/INDUSTRIAS-CARNICAS-ALONSO-SL-217762568256282/', ,='', target='_blank', title='Industrias Cárnicas Alonso, S.L.')
-            img.img-responsive.img-centered(src='img/dist/logos/carnicas-alonso.jpg', alt='Industrias Cárnicas Alonso, S.L.', ,='', title='Industrias Cárnicas Alonso, S.L.')
+          a(href='https://es-es.facebook.com/INDUSTRIAS-CARNICAS-ALONSO-SL-217762568256282/', target='_blank', title='Industrias Cárnicas Alonso, S.L.')
+            img.img-responsive.img-centered(src='img/dist/logos/carnicas-alonso.jpg', alt='Industrias Cárnicas Alonso, S.L.', title='Industrias Cárnicas Alonso, S.L.')
         .col-md-2.col-sm-4
           a(href='http://www.promopicking.com/', target='_blank', title='Promopicking: marketing Promocional, logistica, almacenaje, trabajos de manipulación y retractilado')
             img.img-responsive.img-centered(src='img/dist/logos/promo-picking.jpg', alt='Promopicking: marketing Promocional, logistica, almacenaje, trabajos de manipulación y retractilado', title='Promopicking: marketing Promocional, logistica, almacenaje, trabajos de manipulación y retractilado')
@@ -725,22 +725,22 @@ html(lang='es')
         .container
           .row
             .col-md-4.text-left
-              span.copyright © LFC Abogados y Economistas, S.L. 2016
+              span.copyright © LFC Abogados y Economistas, S.L. 2017
             .col-md-4
               ul.list-inline.social-buttons.hidden
                 li
-                  a(href='#')
+                  a(href='#', title='Cuenta de Twitter de LFC, abogados y economistas')
                     i.fa.fa-twitter
                 li
-                  a(href='#')
+                  a(href='#', title='Cuenta de Facebook de LFC, abogados y economistas')
                     i.fa.fa-facebook
                 li
-                  a(href='#')
+                  a(href='#', title='Cuenta de LinkedIn de LFC, abogados y economistas')
                     i.fa.fa-linkedin
             .col-md-4.text-right
               ul.list-inline.quicklinks
                 li
-                  a.anim-hover(href='legal.html') Términos legales y condiciones de uso.
+                  a.anim-hover(href='legal.html', tile="Ir a Términos legales") Términos legales y condiciones de uso.
             .clearfix
       .sub-footer
         .container
@@ -772,7 +772,7 @@ html(lang='es')
                   | .
                 p.item-intro.text-muted Ayudarle a definir o adaptar un código de buen gobierno de su empresa.
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/codigo-etico-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/codigo-etico-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', title='Código ético de su empresa en LFC, abogados especialistas en Compliance')
                 p
                   | Desde el año 1998 en que se publicó el 
                   span Informe Olivencia o Código de buen gobierno corporativo
@@ -809,7 +809,7 @@ html(lang='es')
                   span riesgos penales
                   | .
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/mapa-riesgos-penales-modal.jpg', alt='')
+                img.img-responsive.img-centered(src='img/dist/portfolio/mapa-riesgos-penales-modal.jpg', alt='Mapa de riesgos penales', title='Mapa de riesgos penales')
                 p
                   | La Ley Orgánica 1/2015, de 30 de marzo, de modificación del Código penal clarifica y determina los requisitos de los procedimientos y controles de prevención que requiere como elementos para 
                   span
@@ -948,7 +948,7 @@ html(lang='es')
                   span procesos y controles
                   |  existentes.
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/identificar-procesos-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/identificar-procesos-modal.jpg', alt='Análisis de los riesgos penales', title='Análisis de los riesgos penales')
                 p
                   span Analizados los riesgos penales
                   | , en una segunda fase, se procede a identificar los procesos internos existentes en los que pueda residir 
@@ -980,7 +980,7 @@ html(lang='es')
                   span plan de prevención penal
                   | .
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/prevencion-penal-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/prevencion-penal-modal.jpg', alt='Elaboración de un plan de prevención penal', title='Elaboración de un plan de prevención penal')
                 p
                   | Diseñamos para su empresa un 
                   span Plan de Prevención Penal (PPP)
@@ -1032,7 +1032,7 @@ html(lang='es')
                 p.item-intro.text-muted
                   | Establecer protocolos que concreten el proceso de formación de la voluntad de la persona jurídica.
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/protocolos-juridicos-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/protocolos-juridicos-modal.jpg', alt='Formación de la voluntad de la persona jurídica', title='Formación de la voluntad de la persona jurídica')
                 p
                   | Los protocolos de 
                   span
@@ -1070,7 +1070,7 @@ html(lang='es')
                   span sistema de denuncias
                   | .
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/canal-etico-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/canal-etico-modal.jpg', alt='Diseño y gestión de canal ético o sistema de denuncias', title='Diseño y gestión de canal ético o sistema de denuncias')
                 p
                   | Los beneficios de la implementación de un 
                   span Canal Ético
@@ -1131,7 +1131,7 @@ html(lang='es')
                   span disciplinario
                   | .
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/sistema-disciplinario-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/sistema-disciplinario-modal.jpg', alt='Sistema disciplinario', title='Sistema disciplinario')
                 p
                   | Una de las cuestiones más espinosas que plantea el régimen de 
                   span responsabilidad penal de las personas jurídicas
@@ -1184,7 +1184,7 @@ html(lang='es')
                   span formación
                   | .
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/plan-formacion-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/plan-formacion-modal.jpg', alt='Plan de formación en Compliance', title='Plan de formación en Compliance')
                 p
                   | Un sistema de cumplimiento normativo no se adquiere sólo controlando el comportamiento de las personas, sino logrando que 
                   span interioricen una serie de valores, compromisos y conductas
@@ -1236,7 +1236,7 @@ html(lang='es')
                   span PPP
                   |  y certificación.
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/verificacion-ppp-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/verificacion-ppp-modal.jpg', alt='Verificación periódica del PPP y certificación', title='Verificación periódica del PPP y certificación')
                 p
                   | Un modelo de prevención penal no es una mera formalidad, debiendo ser capaz de prevenir, detectar y gestionar los riesgos propios de su ámbito. Para ello, se 
                   span ceñirá a las circunstancias de cada organización
@@ -1287,7 +1287,7 @@ html(lang='es')
                   span accionistas
                   | .
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/patrimonio-accionista-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/patrimonio-accionista-modal.jpg', alt='Protección patrimonio de los accionistas', title='Protección patrimonio de los accionistas')
                 p
                   | El 
                   em artículo 33.7 del CP
@@ -1356,7 +1356,7 @@ html(lang='es')
                 p.item-intro.text-muted
                   | Responsabilidad civil y penal de los administradores, directivos y mandos intermedios.
                 //- img & fullText
-                img.img-responsive.img-centered(src='img/dist/portfolio/responsabilidad-civil-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/responsabilidad-civil-modal.jpg', alt='Responsabilidad civil y penal de los administradores', title='Responsabilidad civil y penal de los administradores')
                 p
                   | Los 
                   span deberes de los Administradores
@@ -1380,7 +1380,7 @@ html(lang='es')
                   |  en virtud de lo que se ha llamado el triangulo de responsabilidad creado por la aplicación de los 
                   em artículos 31 Bis y 31 del CP
                   |  que esquemáticamente consistiría en:
-                img.img-responsive.img-centered(src='img/dist/portfolio/triangulo-responsabilidad-modal.jpg', alt='Código ético de su empresa en LFC, abogados especialistas en Compliance', titel='Código ético de su empresa en LFC, abogados especialistas en Compliance')
+                img.img-responsive.img-centered(src='img/dist/portfolio/triangulo-responsabilidad-modal.jpg', alt='Triángulo de responsabilidad', title='Triángulo de responsabilidad')
                 p
                   | La única forma de evitar que los hechos delictivos de los dependientes de la sociedad lleguen a suponer responsabilidad penal personal de los administradores de derecho o de hecho, es impedir la 
                   span

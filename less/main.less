@@ -207,14 +207,16 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    margin: 5px;
+    min-width: 225px;
+    padding: 15px 35px;
     background-color: @main-color;
-    border-color: @transparent;
+    border-color: darken(@main-color, 5%);
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: @white;
 }
 
@@ -223,7 +225,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: @transparent;
+    border-color: darken(@secondary-color, 5%);
     color: @third-color;
     background-color: @secondary-color;
 }
@@ -837,6 +839,7 @@ section#contact .section-subheading {
 
 section h3.section-subheading i {
     color: @lightcoral;
+    margin-right: 8px;
 }
 
 /* ... LEGAL view :: common styles ... */
@@ -974,6 +977,12 @@ section h3.section-subheading i {
 
 
 /* ... NEW MEDIA QUERIES... */
+
+@media all and (min-width: 600px) {
+    #contact a i {
+        color: @white;
+    }
+}
 
 /* Tablets */
 @media all and (max-width: 768px) {

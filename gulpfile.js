@@ -10,17 +10,19 @@
  gulpIgnore  = require('gulp-ignore'),
         path = require('path'),
         jade = require('gulp-jade'),
+		    fs = require('fs');
+		  data = require('gulp-data'),
      sitemap = require('gulp-sitemap');
 
 /*
-* Configuración de la tarea 'default' (gulp) last step to publish
+* Configuración de la tarea 'default' (gulp) last step to trials (dev)
 */
-gulp.task('default', ['sitemap', 'css']);
+gulp.task('default', ['jade', 'less', 'css']);
 
 /*
-* Configuración de la tarea 'deploy' (gulp) first step: compile
+* Configuración de la tarea 'deploy' (gulp) last step to publish (deploy in prod)
 */
-gulp.task('deploy', ['js', 'jade', 'less', 'img']);
+gulp.task('deploy', ['js', 'jade', 'less', 'css', 'img', 'sitemap']);
 
 /*
 * Configuración de la tarea 'js' --> gulp-concat + gulp-uglify (gulp js)
@@ -65,13 +67,29 @@ gulp.task('img', function () {
 * Configuración de la tarea 'jade' --> gulp-jade (gulp jade)
 */
 gulp.task('jade', function () {
-  var YOUR_LOCALS = {};
+  var localsCopies = {locals: require('./locals/copies_es.json'),};
   gulp.src('./jade/*.jade')
     .pipe(jade({
-      locals: YOUR_LOCALS
+      locals: localsCopies
     }))
     .pipe(gulp.dest('./'));
 });
+
+/*
+gulp.task('templates', function() {
+  return gulp.src('./jade/*.jade')
+    .pipe(data(function(file) {
+        //return { "locals": require('./locals/copies_es.json') }
+		  return JSON.parse(
+        	 fs.readFileSync('./locals/copies_es.json')
+        );
+    }))
+    .pipe(jade({
+      pretty: false
+    }))
+    .pipe(gulp.dest('./'))
+});
+*/
 
 /*
 * Configuración de la tarea 'sitemap' --> gulp-sitemap (gulp sitemap)

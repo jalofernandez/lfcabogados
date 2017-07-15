@@ -18,16 +18,17 @@
   "homepage": "https://github.com/jalofernandez/lfcabogados#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-concat": "^2.6.0",
-    "gulp-imagemin": "^3.1.0",
+    "gulp-clean-css": "^3.5.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^3.3.0",
     "gulp-sitemap": "^4.2.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
     "gulp-ignore": "^2.0.2",
     "gulp-jade": "^1.1.0",
-    "gulp-less": "^3.2.0",
+    "gulp-less": "^3.3.2",
     "jade": "^1.11.0"
   }
 }

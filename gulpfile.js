@@ -4,15 +4,17 @@
     var gulp = require('gulp'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
+   minifycss = require('gulp-minify-css'),
     cleanCSS = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
         less = require('gulp-less'),
  gulpIgnore  = require('gulp-ignore'),
         path = require('path'),
-        jade = require('gulp-jade'),
-		    fs = require('fs');
-		  data = require('gulp-data'),
+        pug = require('gulp-pug'),
+          fs = require('fs'),
+        data = require('gulp-data'),
      sitemap = require('gulp-sitemap');
+
 
 /*
 * Configuración de la tarea 'default' (gulp) last step to trials (dev)
@@ -64,32 +66,18 @@ gulp.task('img', function () {
 });
 
 /*
-* Configuración de la tarea 'jade' --> gulp-jade (gulp jade)
-*/
-gulp.task('jade', function () {
-  var localsCopies = {locals: require('./locals/copies_es.json'),};
-  gulp.src('./jade/*.jade')
-    .pipe(jade({
-      locals: localsCopies
-    }))
-    .pipe(gulp.dest('./'));
+ * Configuración de la tarea 'pug' --> gulp-pug (gulp pug)
+ */
+gulp.task('pug', function() {
+    return gulp.src('./templates/*.pug')
+        .pipe(data(function(file) {
+            //return JSON.parse(fs.readFileSync('./locales/lang_es.json'))
+        }))
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./'));
 });
-
-/*
-gulp.task('templates', function() {
-  return gulp.src('./jade/*.jade')
-    .pipe(data(function(file) {
-        //return { "locals": require('./locals/copies_es.json') }
-		  return JSON.parse(
-        	 fs.readFileSync('./locals/copies_es.json')
-        );
-    }))
-    .pipe(jade({
-      pretty: false
-    }))
-    .pipe(gulp.dest('./'))
-});
-*/
 
 /*
 * Configuración de la tarea 'sitemap' --> gulp-sitemap (gulp sitemap)

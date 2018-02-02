@@ -1,5 +1,4 @@
 {
-   "short_name": "LFC",
 	"name": "LFC abogados",
 	"icons": [
 		{
@@ -24,6 +23,5 @@
 		}
 	],
 	"theme_color": "#ffffff",
-	"display": "standalone",
-   "start_url": "index.html?launcher=true"
+	"display": "standalone"
 }

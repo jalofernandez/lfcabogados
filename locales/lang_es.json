@@ -1,3 +1,10 @@
 {
-  "navbar":"json"
+  "notfound": {
+    "tips":[
+      "<b>a)</b> Que haya tecleado incorrectamente la dirección URL.",
+      "<b>b)</b> Que haya perdido su conexión a internet.",
+      "<b>c)</b> Que la página esté obsoleta y haya sido eliminada.",
+      "<b>d)</b> Que la página no exista en el idioma que solicita."
+    ]
+  }
 }

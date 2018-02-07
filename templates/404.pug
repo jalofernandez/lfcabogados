@@ -56,22 +56,10 @@ html(lang='es')
                             span página que buscas no existe
                             | . Lo sentimos. Podría ser por alguna de estas causas:
                 .row.more-margin-bottom.error-tips
-                    .col-sm-6.col-md-3
-                        p.text-muted.effects
-                            b a)
-                            |  Que haya tecleado incorrectamente la dirección URL.
-                    .col-sm-6.col-md-3
-                        p.text-muted.effects
-                            b b)
-                            |  Que haya perdido su conexión a internet.
-                    .col-sm-6.col-md-3
-                        p.text-muted.effects
-                            b c)
-                            |  Que la página esté obsoleta y haya sido eliminada.
-                    .col-sm-6.col-md-3
-                        p.text-muted.effects
-                            b d)
-                            |  Que la página no exista en el idioma que solicita.
+                      //- for each loop to load all copies in "locales" json file/s
+                      each tips, i in notfound.tips
+                        .col-sm-6.col-md-3
+                            p.text-muted.effects !{tips}
                 .row
                     .col-sm-12
                         p.text-muted.effects.text-center

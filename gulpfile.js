@@ -10,7 +10,7 @@
         less = require('gulp-less'),
  gulpIgnore  = require('gulp-ignore'),
         path = require('path'),
-        pug = require('gulp-pug'),
+         pug = require('gulp-pug'),
           fs = require('fs'),
         data = require('gulp-data'),
      sitemap = require('gulp-sitemap');
@@ -71,7 +71,7 @@ gulp.task('img', function () {
 gulp.task('pug', function() {
     return gulp.src('./templates/*.pug')
         .pipe(data(function(file) {
-            //return JSON.parse(fs.readFileSync('./locales/lang_es.json'))
+            return JSON.parse(fs.readFileSync('./locales/lang_es.json'))
         }))
         .pipe(pug({
             pretty: true

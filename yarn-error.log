@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/Cellar/node/9.5.0/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "lfcabogados",
+    "version": "1.1.0",
+    "description": "LFC abogados, expertos en Compliance Legal",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jalofernandez/lfcabogados.git"
+    },
+    "author": "jalofernandez",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jalofernandez/lfcabogados/issues"
+    },
+    "homepage": "https://github.com/jalofernandez/lfcabogados#readme",
+    "devDependencies": {
+      "gulp": "^3.9.1",
+      "gulp-clean-css": "^3.9.2",
+      "gulp-concat": "^2.6.1",
+      "gulp-data": "^1.3.1",
+      "gulp-imagemin": "^4.1.0",
+      "gulp-sitemap": "^5.0.0",
+      "gulp-minify-css": "^1.2.4",
+      "gulp-uglify": "^3.0.0"
+    },
+    "dependencies": {
+      "gulp-ignore": "^2.0.2",
+      "gulp-less": "^3.4.0",
+      "fs": "0.0.1-security",
+      "gulp-install": "^1.1.0",
+      "gulp-pug": "^3.3.0",
+      "pug": "^2.0.0-rc.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, scandir '/Users/jalofernandez/.config/yarn/link'

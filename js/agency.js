@@ -24,3 +24,8 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// (custom js) script to set current Year in (common) Footer
+$(function () {
+    $(".js-current-year").html(new Date().getFullYear());
+});

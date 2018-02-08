@@ -22,7 +22,7 @@ html(lang='es')
                         span.icon-bar
                         span.icon-bar
                     a.navbar-brand.page-scroll(href='index.html', alt='Logotipo de LFC, abogados especialistas en compliance')
-                        img(src='img/dist/common/lfc_logo.svg', alt='LFC, abogados especialistas en compliance', title='LFC, abogados especialistas en compliance')
+                        img(src='img/common/lfc_logo.svg', alt='LFC, abogados especialistas en compliance', title='LFC, abogados especialistas en compliance')
                 //- Collect the nav links, forms, and other content for toggling
                 #bs-example-navbar-collapse-1.collapse.navbar-collapse.animated.fadeIn
                     ul.nav.navbar-nav.navbar-right
@@ -44,17 +44,14 @@ html(lang='es')
                 .row
                     .col-lg-12.text-center
                         h2.section-heading
-                            | Error
-                            span 404
+                            | !{notfound.title}
                         h3.section-subheading.text-muted
                             i.fa.fa-warning(aria-hidden='true')
-                            |   Página no encontrada.
+                            | #{notfound.subtitle}
                 .row.more-margin-bottom
                     .col-sm-12
                         p.text-muted.effects.text-center
-                            | Parece que la
-                            span página que buscas no existe
-                            | . Lo sentimos. Podría ser por alguna de estas causas:
+                            | !{notfound.advise}
                 .row.more-margin-bottom.error-tips
                       //- for each loop to load all copies in "locales" json file/s
                       each tips, i in notfound.tips
@@ -64,56 +61,12 @@ html(lang='es')
                     .col-sm-12
                         p.text-muted.effects.text-center
                             a(href='index.html', title='Volver a la página de inicio de LFC Abogados y Economistas')
-                                | Pinche aquí para volver al Inicio
+                                | #{notfound.indexlink}&nbsp;
                                 i.fa.fa-home
-                            | .
-        section#contact
-            .container
-                .row
-                    .col-lg-12.text-center
-                        h2.section-heading
-                            span Contacta
-                            |  con nosotros
-                        h3.col-sm-6.col-sm-offset-4.section-subheading.text-muted
-                            a(href='https://goo.gl/maps/wDsUg2E5aV12', target='_blank', rel="noopener noreferrer", title='Ver dirección en Google maps')
-                                i.fa.fa-map-marker
-                                |  Calle O´Donnell nº16, 28009, Madrid.
-                            a(href='tel:915571230', title='Llamar a LFC Abogados y Economistas')
-                                i.fa.fa-phone
-                                |  915 571 230
-                            a(href='mailto:info@lfcabogados.com', title='Escribir email a LFC Abogados y Economistas')
-                                i.fa.fa-envelope
-                                |  info@lfcabogados.com
-        footer
-            .main-footer
-                .container
-                    .row
-                        .col-md-4.text-left
-                            span.copyright © LFC Abogados y Economistas, S.L. 2017
-                        .col-md-4
-                            ul.list-inline.social-buttons.hidden
-                                li
-                                    a(href='#', title='Cuenta de Twitter de LFC, abogados y economistas')
-                                        i.fa.fa-twitter
-                                li
-                                    a(href='#', title='Cuenta de Facebook de LFC, abogados y economistas')
-                                        i.fa.fa-facebook
-                                li
-                                    a(href='#', title='Cuenta de LinkedIn de LFC, abogados y economistas')
-                                        i.fa.fa-linkedin
-                        .col-md-4.text-right
-                            ul.list-inline.quicklinks
-                                li
-                                    a.anim-hover(href='index.html', title='Volver a la página de inicio de LFC Abogados y Economistas') Sobre LFC Abogados y Economistas.
-                        .clearfix
-            .sub-footer
-                .container
-                    .row
-                        .col-md-6.text-left
-                            span.copyright Powered by ARANZADI THOMSON REUTERS
-                        .col-md-6.text-right
-                            span.copyright
-                                | Desarrollado y diseñado por
-                                a(href='http://arted.es/', title='Arted, diseño gráfico y desarrollo web') arted.es
+                                  
+        //- (common) "Contact Us" Section
+        include includes/contact
+        //- (common) "Footer" Section
+        include includes/footer
         //- All (common) Scripts
         include includes/scripts

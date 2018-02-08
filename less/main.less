@@ -8,7 +8,7 @@
 @import "bootstrap.min.css";
 
 // Custom icon Fonts
-@import "../../font-awesome/css/font-awesome.min.css";
+@import "../font-awesome/css/font-awesome.min.css";
 
 // Custom Google Fonts
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Kaushan+Script|Montserrat:700,400|Roboto+Slab:100,300,400,700);
@@ -278,14 +278,14 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: @transparent;
     background-color: @white;
-    
+
     .navbar-brand {
         cursor: pointer;
-        
+
         &:hover, &:focus, &:active, &.active {
             color: @grey-c;
         }
-        
+
         img {
             width: 150px;
             height: auto;
@@ -293,26 +293,26 @@ fieldset[disabled] .btn-xl.active {
             bottom: 12px;
         }
     }
-    
+
     // COLLAPSE (bootstrap)
     .navbar-collapse {
         border-color: rgba(255,255,255,.02);
     }
-    
+
     // TOGGLE (bootstrap)
     .navbar-toggle {
         border-color: @white;
         background-color: @white;
-        
+
         &:hover, &:focus {
             background-color: @white;
         }
-        
+
         .icon-bar {
             background-color: @main-color;
         }
     }
-    
+
     // NAV (links) LIST
     .nav li a {
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -321,24 +321,24 @@ fieldset[disabled] .btn-xl.active {
         font-weight: 400;
         letter-spacing: 1px;
         text-transform: uppercase;
-        
+
         &:hover, &:focus {
             outline: 0;
             color: @main-color;
         }
-        
+
         span {
             text-transform: initial;
             letter-spacing: 0.02em;
             font-size: 13px;
         }
     }
-    
+
     .navbar-nav>.active>a {
         border-radius: 0;
         color: @secondary-color;
         background-color: @transparent;
-        
+
         &:hover, &:focus {
             color: @main-color;
             background-color: @transparent;
@@ -357,13 +357,13 @@ fieldset[disabled] .btn-xl.active {
         top: 40px;
         transform: translate(-50%, -50%);
     }
-    
+
     .navbar-right {
         position: relative;
         top: 20px;
         width: 100%;
     }
-    
+
     .navbar-default .nav li a {
         font-size: 13px;
         padding-left: 8px;
@@ -406,7 +406,7 @@ fieldset[disabled] .btn-xl.active {
         padding-right: 0;
         padding-left: 0;
         background-color: @white;
-        
+
         .navbar-brand {
             font-size: 1.5em;
         }
@@ -419,18 +419,18 @@ header {
     text-align: center;
     color: @white;
     background-attachment: scroll;
-    background-image: url(../../img/dist/header/header-bg.jpg);
+    background-image: url(../../img/header/header-bg.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    
+
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
-        
+
         .intro-lead-in {
             h1 {
                 margin-bottom: 25px;
@@ -443,7 +443,7 @@ header {
                 text-shadow: 2px 2px 2px rgba(0,0,0,.8);
             }
         }
-        
+
         .intro-heading {
             margin-bottom: 25px;
             text-transform: uppercase;h1
@@ -462,7 +462,7 @@ header {
         .intro-text {
             padding-top: 175px;
             padding-bottom: 325px;
-            
+
             .intro-lead-in {
                 h1 {
                     margin-bottom: 25px;
@@ -472,7 +472,7 @@ header {
                     line-height: 50px;
                 }
             }
-            
+
             .intro-heading {
                 margin-bottom: 50px;
                 text-transform: uppercase;
@@ -496,14 +496,14 @@ header {
 
 section {
     padding: 100px 0;
-    
+
     // Main (section) Title
     h2.section-heading {
         margin-top: 0;
         margin-bottom: 15px;
         font-size: 40px;
     }
-    
+
     // Secondary (section) TTitle
     h3.section-subheading {
         margin-bottom: 75px;
@@ -528,21 +528,21 @@ section {
 
 #portfolio,
 #others {
-    
+
     * {
         z-index: 2;
     }
-    
+
     .portfolio-item {
         right: 0;
         margin: 0 0 15px;
-        
+
         .portfolio-link {
             display: block;
             position: relative;
             margin: 0 auto;
             max-width: 400px;
-            
+
             .portfolio-hover {
                 position: absolute;
                 width: 100%;
@@ -552,25 +552,25 @@ section {
                 -webkit-transition: all ease .5s;
                 -moz-transition: all ease .5s;
                 transition: all ease .5s;
-                
+
                 &:hover {
                     opacity: 1;
                     cursor: pointer;
                 }
-                
+
                 &:hover + .portfolio-caption {
                     box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.15);
                 }
-                
+
                 // to disable hover effects and modal dialogs
                 &.portfolio-hover-disable {
                     cursor: default !important;
-                    
+
                     &:hover {
                         opacity: 0 !important;
                     }
                 }
-                
+
                 .portfolio-hover-content {
                     position: absolute;
                     top: 50%;
@@ -580,19 +580,19 @@ section {
                     text-align: center;
                     font-size: 20px;
                     color: lightcoral;
-                    
+
                     i {
                         margin-top: -12px;
                     }
-                    
+
                     h3,
                     h4 {
-                       margin: 0; 
+                       margin: 0;
                     }
                 }
             }
         }
-        
+
         // Captation details
         .portfolio-caption {
             margin: 0 auto;
@@ -600,12 +600,12 @@ section {
             max-width: 400px;
             text-align: center;
             background-color: @white;
-            
+
             h4 {
               margin: 0;
-                text-transform: none;  
+                text-transform: none;
             }
-            
+
             p {
                 margin: 0;
                 font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -640,32 +640,32 @@ section {
 .team-member {
     margin-bottom: 50px;
     text-align: center;
-    
+
     img {
         margin: 0 auto;
         border: 1px solid @white;
         box-shadow: 0 4px 5px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.15);
     }
-    
+
     h4 {
         margin-top: 25px;
         margin-bottom: 0;
         text-transform: none;
         font-weight: 400;
         font-size: 1.4em;
-        
+
         span {
             font-weight: 600;
         }
     }
-    
+
     p {
         margin-top: 0;
         text-align: justify;
         font-size: 1em;
         line-height: 1.6em;
         padding: 20px;
-        
+
         span {
             color: @lightcoral;
         }
@@ -678,48 +678,48 @@ aside.clients img {
 
 #contact {
     background-color: lightcoral;
-    background-image: url(../../img/dist/common/map-image.png);
+    background-image: url(../../img/common/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
-    
+
     a {
         color: #61272c;
         display: block;
         margin: 10px 0;
         text-align: left;
-        
+
         &:hover {
             color: @white;
         }
     }
-    
+
     .section-heading {
         color: @white;
     }
-    
+
     // for submit contact form
     .form-group {
         margin-bottom: 25px;
-        
+
         textarea,
         input {
             padding: 20px;
         }
-        
+
         textarea.form-control {
             height: 236px;
         }
-        
+
         input.form-control {
             height: auto;
         }
     }
-    
+
     .form-control:focus {
         border-color: lightcoral;
         box-shadow: none;
     }
-    
+
     .text-danger {
         color: @red;
     }
@@ -759,7 +759,7 @@ footer {
     border-top: 1px solid #eee;
     padding: 25px 0 0 0;
     text-align: center;
-    
+
     ul.quicklinks,
     span.copyright {
         text-transform: uppercase;
@@ -767,7 +767,7 @@ footer {
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         line-height: 40px;
     }
-    
+
     ul.quicklinks {
         margin-bottom: 0;
     }
@@ -775,7 +775,7 @@ footer {
 
 ul.social-buttons {
     margin-bottom: 0;
-    
+
     li a {
         display: block;
         width: 40px;
@@ -789,7 +789,7 @@ ul.social-buttons {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        
+
         &:hover, &:focus, &:active {
             color: @third-color;
             background-color: @secondary-color
@@ -848,7 +848,7 @@ section h3.section-subheading i {
     font-size: 16px;
     line-height: 28px;
     list-style: none;
-    
+
     i {
         padding-right: 10px;
         color: @lightcoral;
@@ -858,7 +858,7 @@ section h3.section-subheading i {
 /* ... PORTFOLIO special section :: common MODAL dialogs ... */
 
 .portfolio-modal {
-    
+
     .modal-content {
         padding: 100px 0;
         min-height: 100%;
@@ -868,33 +868,33 @@ section h3.section-subheading i {
         background-clip: border-box;
         -webkit-box-shadow: none;
         box-shadow: none;
-        
+
         // Main Title
         h2 {
             margin-bottom: 15px;
             font-size: 3em;
         }
-        
+
         // Text description
         p {
             margin-bottom: 30px;
-            
+
             &:not(.item-intro) {
                 text-align: justify;
             }
-            
+
             &.item-intro {
                 margin: 20px 0 30px;
                 font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
                 font-size: 16px;
                 font-style: italic;
             }
-            
+
             span {
                 color: @lightcoral;
             }
         }
-        
+
         // List items
         ul {
             &:not(.list-inline) {
@@ -903,34 +903,34 @@ section h3.section-subheading i {
                 text-align: left;
                 text-decoration: none;
                 list-style: none;
-                
+
                 li:before {
                     content: "·";
                     color: coral;
                     position: relative;
                     right: 10px;
                 }
-                
+
                 li.sublist {
                     padding-left: 25px;
-                    
+
                     &:before {
                         color: grey;
                     }
                 }
             }
-            
+
             &.list-inline {
                 margin-top: 0;
                 margin-bottom: 30px;
             }
         }
-        
+
         // Images
         img {
             margin-bottom: 30px;
         }
-        
+
         // to Close Modal dialog
         .close-modal {
             position: absolute;
@@ -940,11 +940,11 @@ section h3.section-subheading i {
             height: 75px;
             background-color: transparent;
             cursor: pointer;
-            
+
             &:hover {
                 opacity: .3;
             }
-            
+
             .lr {
                 z-index: 1051;
                 width: 1px;
@@ -954,7 +954,7 @@ section h3.section-subheading i {
                 -webkit-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
-                
+
                 .rl {
                     z-index: 1052;
                     width: 1px;
@@ -967,7 +967,7 @@ section h3.section-subheading i {
             }
         }
     }
-    
+
     // Modal background
     .modal-backdrop {
         display: none;
@@ -995,14 +995,14 @@ section h3.section-subheading i {
             margin: 20px 0;
         }
     }
-    
+
     .navbar-default .navbar-brand img  {
         width: 125px;
         bottom: 10px;
     }
-    
+
     header .intro-text .intro-heading,
-    section h2.section-heading { 
+    section h2.section-heading {
        font-size: 30px;
        line-height: 40px;
     }
@@ -1027,14 +1027,14 @@ section h3.section-subheading i {
 /* mobile devices */
 @media all and (max-width: 599px) {
     header .intro-text .intro-heading,
-    section h2.section-heading { 
+    section h2.section-heading {
        font-size: 25px;
        line-height: 35px;
     }
 }
 
 @media all and (max-width: 480px) {
-    .portfolio-modal .modal-content h2 { 
+    .portfolio-modal .modal-content h2 {
        font-size: 20px;
     }
 }

@@ -3,7 +3,7 @@
   "description": "LFC abogados, expertos en Compliance Legal",
   "main": "gulpfile.js",
   "authors": [
-    "jalofernandez"
+    "@jalofernandez"
   ],
   "license": "ISC",
   "homepage": "https://github.com/jalofernandez/lfcabogados",

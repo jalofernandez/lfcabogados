@@ -1,10 +1,29 @@
 {
+  "contact": {
+    "title": "<span>Contacta</span> con nosotros",
+    "address": "Calle O´Donnell nº16, 28009, Madrid.",
+    "phone": "915 571 230",
+    "email": "info@lfcabogados.com"
+  },
+  "footer": {
+    "copyright": "© LFC Abogados y Economistas, S.L.",
+    "links": {
+      "index": "Inicio",
+      "legal": "Términos de uso."
+    },
+    "powered": "Powered by ARANZADI THOMSON REUTERS",
+    "author": "Desarrollado y diseñado por <a href='http://arted.es/', title='Arted, diseño gráfico y desarrollo web', target='_blank'>arted.es</a>"
+  },
   "notfound": {
+    "title": "Error <span>404</span>",
+    "subtitle": "Página no encontrada.",
+    "advise": "Parece que la <span>página que buscas no existe</span>. Lo sentimos. Podría ser por alguna de estas causas:",
     "tips":[
       "<b>a)</b> Que haya tecleado incorrectamente la dirección URL.",
       "<b>b)</b> Que haya perdido su conexión a internet.",
       "<b>c)</b> Que la página esté obsoleta y haya sido eliminada.",
       "<b>d)</b> Que la página no exista en el idioma que solicita."
-    ]
+    ],
+    "indexlink": "Pinche aquí para volver al Inicio"
   }
 }

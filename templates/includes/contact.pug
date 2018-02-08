@@ -1,0 +1,16 @@
+//- (common) "Contact Us" Section
+section#contact
+    .container
+        .row
+            .col-lg-12.text-center
+                h2.section-heading !{contact.title}
+                h3.col-sm-6.col-sm-offset-4.section-subheading.text-muted
+                    a(href='https://goo.gl/maps/wDsUg2E5aV12', target='_blank', rel="noopener noreferrer", title='Ver dirección en Google maps')
+                        i.fa.fa-map-marker
+                        | #{contact.address}
+                    a(href='tel:915571230', title='Llamar a LFC Abogados y Economistas')
+                        i.fa.fa-phone
+                        | #{contact.phone}
+                    a(href='mailto:info@lfcabogados.com', title='Escribir email a LFC Abogados y Economistas')
+                        i.fa.fa-envelope
+                        | #{contact.email}

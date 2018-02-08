@@ -1,0 +1,35 @@
+//- (common) "Footer" Section
+footer
+    .main-footer
+        .container
+            .row
+                .col-md-4.text-left
+                    span.copyright #{footer.copyright}&nbsp;
+                    span.js-current-year
+                .col-md-4
+                    ul.list-inline.social-buttons.hidden
+                        li
+                            a(href='#', title='Cuenta de Twitter de LFC, abogados y economistas')
+                                i.fa.fa-twitter
+                        li
+                            a(href='#', title='Cuenta de Facebook de LFC, abogados y economistas')
+                                i.fa.fa-facebook
+                        li
+                            a(href='#', title='Cuenta de LinkedIn de LFC, abogados y economistas')
+                                i.fa.fa-linkedin
+                .col-md-4.text-right
+                    ul.list-inline.quicklinks
+                        li
+                            a.anim-hover(href='index.html', title='Volver a la página de inicio de LFC Abogados y Economistas') #{footer.links.index}
+                        li
+                            | /
+                        li
+                            a.anim-hover(href='legal.html', tile="Ir a Términos legales") #{footer.links.legal}
+                .clearfix
+    .sub-footer
+        .container
+            .row
+                .col-md-6.text-left
+                    span.copyright #{footer.powered}
+                .col-md-6.text-right
+                    span.copyright !{footer.author}

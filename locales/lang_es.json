@@ -12,7 +12,54 @@
       "legal": "Términos de uso."
     },
     "powered": "Powered by ARANZADI THOMSON REUTERS",
-    "author": "Desarrollado y diseñado por <a href='http://arted.es/', title='Arted, diseño gráfico y desarrollo web', target='_blank'>arted.es</a>"
+    "author": "Desarrollado y diseñado por <a href='http://arted.es/' title='Arted, diseño gráfico y desarrollo web' target='_blank'>arted.es</a>"
+  },
+  "index": {
+    "header": {
+      "title": "Especializados en Compliance, asesoramiento financiero a empresas, consultoría de negocio...",
+      "call": "¡CONTÁCTANOS!",
+      "btn": {
+        "contact": "Contacto",
+        "download": "Descarga PDF"
+      }
+    },
+    "services": {
+      "title": "¿Por qué <span>compliance</span>?",
+      "subtitle": "Tus clientes ya te los están exigiendo:",
+      "tips": {
+        "risk": "En toda empresa existe riesgo de <b>comisión de delito</b>, sin importar el tamaño o el sector.",
+        "penal": "Blinda tu empresa ante una <b>causa penal</b>.",
+        "etics": "Muestra a tus clientes tu <b>código ético</b> a través de tu Web.",
+        "channel": "Implementa un <b>canal de denuncias</b> que te proteja.",
+        "confiance": "Vende <b>confianza</b> al mercado.",
+        "model": "Prepárate para el <b>nuevo modelo</b> de comercio."
+      }
+    },
+    "portfolio": {
+      "intro": {
+        "title": "¿Qué es <span>compliance</span>?",
+        "subtitle": "Es un programa legal específico para su empresa u organización con el fin de exonerar a esta de la responsabilidad penal.",
+        "add": "La <span>implantación de un modelo de prevención penal</span> (MPP) es necesaria para garantizar la supervivencia y <b>continuidad de la empresa</b> y es un modelo de gestión que le <b>da prestigio</b>, <b>otorga seguridad jurídica</b> y le ayuda a <b>preservar su reputación</b>.",
+        "unique": "Es la <span>única forma de evitar que la empresa pueda ser declarada responsable penalmente</span> , evitando que se le puedan imponer las sanciones previstas en el artículo 33.7 del Código Penal: multa, disolución de la persona jurídica, suspensión de actividades, clausura de locales y establecimientos, inhabilitación para contratar con el sector público, o la intervención judicial. En este punto, es importante tener en cuenta que <b>los Seguros de Responsabilidad Civil no cubren la responsabilidad penal ni la civil derivada del delito</b>."
+      },
+      "offer": {
+        "title": "¿Qué <span>ofrecemos</span>?",
+        "subtitle": "Prepárate para el nuevo modelo de comercio. </br>No habrá negocio sin <b>Compliance</b>."
+      },
+      "tips": {
+        "codigo": "Ayudarle a definir o adaptar el <b>Código ético</b> o de buen gobierno de su empresa.",
+        "riesgos": "Elaborar un Mapa de <b>riesgos penales</b>.",
+        "procesos": "<b>Identificar procesos</b> y controles existentes.",
+        "penal": "Elabora un <b>Plan de Prevención Penal</b> (PPP).",
+        "juridicos": "Le ayudamos a establecer protocolos que concreten el proceso de <b>formación de voluntad de la persona jurídica</b>.",
+        "etico": "Diseñamos para Ud. el <b>canal ético o sistema de denuncias </b> y se lo gestionamos si Ud. Lo desea.",
+        "disciplinario": "Le asesoramos en la implantación de un <b>sistema disciplinario</b> compatible con su Convenio Colectivo.",
+        "formacion": "Desarrollamos el <b>plan de formación</b> en su empresa.",
+        "ppp": "Realizamos <b>verificación periódica del PPP</b> y certificamos su idoneidad.",
+        "accionista": "Proteccion del <b>patrimonio de los accionista</b>.",
+        "civil": "<b>Responsabilidad Civil y Penal</b> de Administradores, Directivos y Mandos Intermedios."
+      }
+    }
   },
   "notfound": {
     "title": "Error <span>404</span>",
@@ -25,5 +72,52 @@
       "<b>d)</b> Que la página no exista en el idioma que solicita."
     ],
     "indexlink": "Pinche aquí para volver al Inicio"
+  },
+  "legal": {
+    "terms": {
+      "title": "Términos <span>legales</span>",
+      "paragraphs": [
+        "<span>LFC Abogados y Economistas, S.L. 2017</span>, responsable del sitio web, pone a disposición de los usuarios el presente documento con el que pretende dar cumplimiento a las obligaciones dispuestas en la <b>Ley 34/2002, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE)</b>, así como informar a todos los usuarios del sitio web respecto a cuáles son las condiciones de uso del sitio web.",
+        "Toda persona que acceda a este sitio web asume el papel de usuario, comprometiéndose a la observancia y cumplimiento riguroso de las disposiciones aquí dispuestas, así como a cualesquiera otra disposición legal que fuera de aplicación.",
+        "<span>LFC Abogados y Economistas</span> se reserva el derecho a modificar cualquier tipo de información que pudiera aparecer en el sitio web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones, entendiéndose como suficiente con la publicación en el sitio web de la <span>LFC Abogados y Economistas</span>."
+      ]
+    },
+    "lopd": {
+      "title": "Ley orgánica de <span>protección de datos</span>",
+      "paragraphs": [
+        "<span>LFC Abogados y Economistas</span> se encuentra profundamente comprometida con el cumplimiento de la normativa española de protección de datos de carácter personal, y garantiza el cumplimiento íntegro de las obligaciones dispuestas, así como la implementación de las medidas de seguridad dispuestas en el <b>art. 9 de la Ley 15/1999, de Protección de Datos de Carácter Personal (LOPD) y en el Reglamento de Desarrollo de la LOPD</b>.",
+        "Conforme a lo establecido en la <b>Ley de Servicios de Sociedad de la Información y del Comercio Electrónico, 34/2002</b>, de 11 de julio, al cursar esta suscripción usted nos da su consentimiento expreso para realizarle envíos vía correo electrónico desde <span>LFC Abogados y Economistas</span>, que podrán incluir contenidos como invitaciones a eventos profesionales, información de índole comercial de productos, servicios o soluciones que puedan ser de su interés.",
+        "En cualquier caso, si por cualquier motivo desea dejar de recibir nuestras comunicaciones electrónicas, puede indicárnoslo fácilmente usando el vínculo que incluimos a tal efecto al pie de nuestros mensajes de correo electrónico. Alternativamente, también puede escribirnos a la dirección <a href='mailto:info@lfcabogados.com' title='Enviar email a LFC Abogados y Economistas'>info@lfcabogados.com</a> para solicitarnos la modificación o cancelación de sus datos.",
+        "No obstante lo anterior y con el ánimo de proteger aún más, si cabe, su control sobre sus datos y para contemplar aquellos casos en los que la excepción anterior pueda no ser de aplicación, sus datos serán incorporados a un fichero automatizado convenientemente registrado ante la Agencia Española de Protección de Datos (AGPD) y sobre el que podrá ejercer sus derechos reconocidos legalmente (acceso, rectificación, cancelación y oposición) escribiendo a la dirección de correo electrónico indicada más arriba indicando claramente, en ambos casos, que su comunicación está relacionada con <i>Protección de Datos</i>."
+      ]
+    },
+    "cookies": {
+      "title": "Uso de <span>Cookies</span>",
+      "headerlist": "Cómo <b>desactivar las cookies</b> en:",
+      "paragraphs": [
+        "El sitio web de <span>LFC Abogados y Economistas</span> puede utilizar <b>cookies</b> (pequeños archivos de información que el servidor envía al ordenador de quien accede a la página) para llevar a cabo determinadas funciones que son consideradas imprescindibles para el correcto funcionamiento y visualización del sitio. Las cookies utilizadas en el sitio web tienen, en todo caso, carácter temporal con la única finalidad de hacer más eficaz su transmisión ulterior y desaparecen al terminar la sesión del usuario. En ningún caso se utilizarán las cookies para recoger información de carácter personal.",
+        "El usuario puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador.",
+        "Las cookies serán tratadas por el titular de esta página web y, en su caso, por entidades a las que se les haya encomendado su tratamiento con finalidades legítimas."
+      ]
+    },
+    "responsabilidad": {
+      "title": "<span>Responsabilidad</span>",
+      "paragraphs": [
+        "<span>LFC Abogados y Economistas</span> se exime de cualquier tipo de responsabilidad derivada de la información publicada en su sitio web, siempre que esta información haya sido manipulada o introducida por un tercero ajeno al mismo.",
+        "Desde el sitio web del cliente es posible que se redirija a contenidos de terceros sitios web. Dado que <span>LFC Abogados y Economistas</span> no puede controlar siempre los contenidos introducidos por los terceros en sus sitios web, éste no asume ningún tipo de responsabilidad respecto a dichos contenidos. En todo caso, <span>LFC Abogados y Economistas</span> manifiesta que procederá a la retirada inmediata de cualquier contenido que pudiera contravenir la legislación nacional o internacional, la moral o el orden público, procediendo a la retirada inmediata de la redirección a dicho sitio web, poniendo en conocimiento de las autoridades competentes el contenido en cuestión.",
+        "<span>LFC Abogados y Economistas</span> no se hace responsable de la información y contenidos almacenados, a título enunciativo pero no limitativo, en foros, chat's, generadores de blogs, comentarios, redes sociales o cualesquiera otro medio que permita a terceros publicar contenidos de forma independiente en la página web de <span>LFC Abogados y Economistas</span>, No obstante y en cumplimiento de lo dispuesto en el <b>art. 11 y 16 de la LSSI-CE</b>, <span>LFC Abogados y Economistas</span> se pone a disposición de todos los usuarios, autoridades y fuerzas de seguridad, y colaborando de forma activa en la retirada o en su caso bloqueo de todos aquellos contenidos que pudieran afectar o contravenir la legislación nacional, o internacional, derechos de terceros o la moral y el orden público. En caso de que el usuario considere que existe en el sitio web algún contenido que pudiera ser susceptible de esta clasificación, se ruega lo notifique de forma inmediata al administrador del sitio web mediante la siguiente dirección de correo electrónico: <a href='mailto:info@lfcabogados.com' title='Enviar email a LFC Abogados y Economistas'>info@lfcabogados.com</a>",
+        "Este sitio web ha sido revisado y probado para que funcione correctamente. En principio, puede garantizarse el correcto funcionamiento los 365 días del año, 24 horas al día. No obstante, <span>LFC Abogados y Economistas</span> no descarta la posibilidad de que existan ciertos errores de programación, o que acontezcan causas de fuerza mayor, catástrofes naturales, huelgas, o circunstancias semejantes que hagan imposible el acceso a la página web."
+      ]
+    },
+    "propiedad": {
+      "title": "Propiedad <span>intelectual</span>",
+      "paragraphs": [
+        "El sitio web, incluyendo a título enunciativo pero no limitativo su programación, edición, compilación y demás elementos necesarios para su funcionamiento, los diseños, logotipos, texto y/o gráficos son propiedad del prestador o en su caso dispone de licencia o autorización expresa por parte de los autores. Todos los contenidos del sitio web se encuentran debidamente protegidos por la normativa de propiedad intelectual e industrial, así como inscritos en los registros públicos correspondientes.",
+        "Independientemente de la finalidad para la que fueran destinados, la reproducción total o parcial, uso, explotación, distribución y comercialización, requiere en todo caso de la autorización escrita previa por parte del prestador. Cualquier uso no autorizado previamente por parte del prestador será considerado un incumplimiento grave de los derechos de propiedad intelectual o industrial del autor. Los diseños, logotipos, texto y/o gráficos ajenos al prestador y que pudieran aparecer en el sitio web, pertenecen a sus respectivos propietarios, siendo ellos mismos responsables de cualquier posible controversia que pudiera suscitarse respecto a los mismos. En todo caso, el prestador cuenta con la autorización expresa y previa por parte de los mismos.",
+        "<span>LFC Abogados y Economistas</span> autoriza expresamente a que terceros puedan redirigir directamente a los contenidos concretos del sitio web, debiendo en todo caso redirigir al sitio web principal del prestador.",
+        "<span>LFC Abogados y Economistas</span> reconoce a favor de sus titulares los correspondientes derechos de propiedad industrial e intelectual, no implicando su sola mención o aparición en el sitio web la existencia de derechos o responsabilidad alguna de <span>LFC Abogados y Economistas</span> sobre los mismos, como tampoco respaldo, patrocinio o recomendación por parte del mismo.",
+        "Para realizar cualquier tipo de observación respecto a posibles incumplimientos de los derechos de propiedad intelectual o industrial, así como sobre cualquiera de los contenidos del sitio web, puede hacerlo a través del siguiente correo electrónico: <a href='mailto:info@lfcabogados.com' title='Enviar email a LFC Abogados y Economistas'>info@lfcabogados.com</a>"
+      ]
+    }
   }
 }

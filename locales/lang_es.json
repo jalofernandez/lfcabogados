@@ -59,6 +59,83 @@
         "accionista": "Proteccion del <b>patrimonio de los accionista</b>.",
         "civil": "<b>Responsabilidad Civil y Penal</b> de Administradores, Directivos y Mandos Intermedios."
       }
+    },
+    "about": {
+      "title": "Casos a <span>evitar</span>",
+      "subtitle": "Prevención de delitos como:",
+      "corrupcion": {
+        "title": "Corrupción:",
+        "paragraph": "Corrupción entre particulares, regalos, invitaciones, comisiones ilegales, con el ánimo de comprar la voluntad del contrante."
+      },
+      "cohecho": {
+        "title": "Cohecho:",
+        "paragraph": "Cohecho impropio en la relación con la administración Pública."
+      },
+      "apropiacion": {
+        "title": "Apropiación indebida:",
+        "paragraph": "Fraude interno apropiación indebida por parte de los empleados de activos de la Empresa."
+      },
+      "delitos": {
+        "title": "Delitos ambientales:",
+        "paragraph": "Directivo de Unidad Productiva que reduce costes de producción elimiando controles en la eliminación de residuos que generan un delito ambiental."
+      },
+      "warning": "¡Evita</br>estos</br>casos!"
+    },
+    "finance": {
+      "title": "Corporate <span>Finance</span>",
+      "subtitle": "Asesoramiento financiero especializado a empresas, tanto a nivel nacional como internacional.",
+      "tips": {
+        "consulting": "Servicios de Consultoria Financiera.",
+        "bank": "Financiacion Bancaria.",
+        "risk": "Capital Riesgo.",
+        "angels": "Business Angels.",
+        "ue": "Subvenciones de la UE.",
+        "privee": "Capital Privado."
+      }
+    },
+    "others": {
+      "title": "Más <span>servicios</span> profesionales",
+      "subtitle": "Buscamos la excelencia en cada uno de s servicios y una  <b>adaptación total a las necesidades del cliente</b>.",
+      "tips": {
+        "consulting": "<b>Consultoría de Negocio</b>: Desarrollamos 'business plan' y su ejecución con consecución de ventas.",
+        "webs": "<b>Redes Comerciales</b>: somos su departamento de Venta Externo, reduciendo sus costes fijos y dotando a su empresa de mucha más flexibilidad.",
+        "worldwide": "<b>Internacionalización</b>: con más de 20 años de experiencia en mercados como USA, teniendo oficinas propias en NYC y Delegado Consultor de Negocio. Business plan en USA y Ronda de financiación.",
+        "import": "<b>Import-Export</b>: más de 15 años de experiencia en Export-Import UK, Francia, Alemania, Italia, Costa Rica, Colombia, USA y China."
+      }
+    },
+    "team": {
+      "title": "Nuestro <span>equipo</span> de <span>profesionales</span> ",
+      "subtitle": "Buscamos",
+      "alejandro": {
+        "name": "Alejandro <span>de Castro</span>",
+        "job": "Socio Director",
+        "resume": "Licenciado en Ciencias Economicas y Empresariales por la Universidad Complutense. MBA y PDG por el IESE y <span>25 años de experiencia en multinacionales</span> como Unilever, Banco Santander y Heineken. Los últimos <b>10 años empresario</b> y <span>consultor de Management</span>."
+      },
+      "alvaro": {
+        "name": "Álvaro <span>Godino García</span>",
+        "job": "Socio Director",
+        "resume": "Abogado, con más de <span>25 años de experiencia en Derecho Mercantil y Laboral</span>, asesorando a múltiples empresas nacionales y multinacionales, tanto en la constitución de sociedades como en el diseño de su estructura de funcionamiento. <span>Especializado en Derecho fiscal, Master en Derecho ambiental.</span> <b>Executive en Compliance Penal</b> avalado por el <b>Consejo General de la Abogacia</b> . Compliance Officer experto por THOMPSON REUTERS ARANZADI y en Responsabilidad de los Administradores Societarios. Por el ICAM."
+      },
+      "blanco": {
+        "name": "Juan José <span>Blanco</span>",
+        "job": "Socio Director",
+        "resume": "Licenciado en <b>Administración y Dirección de Empresas especializado en Dirección Financiera</b> por la Universidad Complutense de Madrid. <b>MBA en Bolsa y Mercados Financieros</b> (IEB). Más de <b>20 años de experiencia en sector financiero en las áreas de Banca Privada y Banca de Inversión</b> (BBVA y BANIF). Actualmente, desarrolla su actividad profesional sobren dos líneas de negocio, la primera de ellas relacionada con la <b>captación de Talento a diferentes niveles estratégicos</b> (Head Hunter) y como segunda línea de negocio se centra en las <b>operaciones de Corporate Finance</b>."
+      },
+      "lasso": {
+        "name": "Juan María <span>Pena Lasso</span>",
+        "job": "Socio Director",
+        "resume": "Abogado, con más de <span>25 años de experiencia en el asesoramiento de empresas nacionales y multinacionales</span>, tanto en la prevención como en la litigación de <b>asuntos penales</b>, <b>civiles</b> y <b>mercantiles</b>. Especializado en responsabilidad civil y penal de personas físicas y jurídicas, tanto en la valoración del daño sufrido, su compensación y reclamación, como en la prevención y minoración del mismo. <span>Executive en Compliance Penal</span> avalado por el Consejo General de la Abogacia."
+      },
+      "laura": {
+        "name": "Laura <span>Puebla</span>",
+        "job": "Abogado asociado",
+        "resume": "Licenciada en Derecho con más de <span>20 años de experiencia en derecho Mercantil y de Empresa</span>. Experta en <b>RSC (Responsabilidad Corporativa)</b>, <b>asesoría de empresas</b> (fiscal, laboral y mercantil) así como <b>consultoría empresarial</b>: planes de viabilidad, estudios de mercado, plan anticrisis, reflotamiento empresarial, búsqueda de financiación, staff externo, desarrollo de negocio, internacionalización, comercio exterior..."
+      },
+      "fernando": {
+        "name": "Fernando <span>Fernández Fornis</span>",
+        "job": "Abogado asociado",
+        "resume": "Licenciado en Politicas y Derecho con más de <span>20 años de experiencia el sector de Telecomunicaciones, Alimentacion y Bebidas e Inmobiliaria</span>."
+      }
     }
   },
   "notfound": {

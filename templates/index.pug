@@ -259,9 +259,9 @@ html(lang='es')
                 .row
                     .col-lg-12.text-center
                         h2.section-heading
-                            | Casos a 
-                            span evitar
-                        h3.section-subheading.text-muted Prevención de delitos como:
+                          | !{index.about.title}
+                        h3.section-subheading.text-muted
+                          | #{index.about.subtitle}
                 .row
                     .col-lg-12
                         ul.timeline
@@ -271,58 +271,56 @@ html(lang='es')
                                 .timeline-panel
                                     .timeline-heading
                                         //- <h4>2014</h4>
-                                        h4.subheading Corrupción:
+                                        h4.subheading 
+                                          | #{index.about.corrupcion.title}
                                     .timeline-body
                                         p.text-muted
-                                            | Corrupción entre particulares, regalos, invitaciones, comisiones ilegales, con el ánimo de comprar la voluntad del contrante.
+                                          | #{index.about.corrupcion.paragraph}
                             li.timeline-inverted
                                 .timeline-image
                                     img.img-circle.img-responsive(src='img/about/cohecho.png', alt='Cohecho', title='Cohecho')
                                 .timeline-panel
                                     .timeline-heading
                                         //- <h4>2014</h4>
-                                        h4.subheading Cohecho:
+                                        h4.subheading
+                                          | #{index.about.cohecho.title}
                                     .timeline-body
-                                        p.text-muted Cohecho impropio en la relación con la administración Pública.
+                                        p.text-muted
+                                          | #{index.about.cohecho.paragraph}
                             li
                                 .timeline-image
                                     img.img-circle.img-responsive(src='img/about/apropiacion-indebida.png', alt='Apropiación indebida', title='Apropiación indebida')
                                 .timeline-panel
                                     .timeline-heading
                                         //- <h4>2014</h4>
-                                        h4.subheading Apropiación indebida:
+                                        h4.subheading
+                                          | #{index.about.apropiacion.title}
                                     .timeline-body
                                         p.text-muted
-                                            | Fraude interno apropiación indebida por parte de los empleados de
-                                            | activos de la Empresa.
+                                          | #{index.about.cohecho.paragraph}
                             li.timeline-inverted
                                 .timeline-image
                                     img.img-circle.img-responsive(src='img/about/delitos-medioambientales.png', alt='Delitos ambientales', title='Delitos ambientales')
                                 .timeline-panel
                                     .timeline-heading
                                         //- <h4>2014</h4>
-                                        h4.subheading Delitos ambientales:
+                                        h4.subheading
+                                          | #{index.about.delitos.title}
                                     .timeline-body
                                         p.text-muted
-                                            | Directivo de Unidad Productiva que reduce costes de producción elimiando controles en la eliminación de residuos que generan un delito ambiental.
+                                          | #{index.about.cohecho.paragraph}
                             li.timeline-inverted
                                 .timeline-image
-                                    h4
-                                        | ¡Evita
-                                        br
-                                        | estos
-                                        br
-                                        | casos!
+                                    h4 !{index.about.warning}
         //- CORPORATE FINANCE (section)
         section#finance.bg-light-gray
             .container
                 .row
                     .col-lg-12.text-center
                         h2.section-heading
-                            | Corporate 
-                            span Finance
+                          | !{index.finance.title}
                         h3.section-subheading.text-muted
-                            | Asesoramiento financiero especializado a empresas, tanto a nivel nacional como internacional.
+                          | #{index.finance.subtitle}
                 //- 3 Text Block
                 .row.text-center.animated.fadeInDown
                     .col-md-4
@@ -330,19 +328,22 @@ html(lang='es')
                             i.fa.fa-circle.fa-stack-2x.text-primary
                             i.fa.fa-info.fa-stack-1x.fa-inverse
                         //- <h4 class="service-heading">E-Commerce</h4>
-                        p.text-muted Servicios de Consultoria Financiera.
+                        p.text-muted
+                          | #{index.finance.tips.consulting}
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fa.fa-circle.fa-stack-2x.text-primary
                             i.fa.fa-bank.fa-stack-1x.fa-inverse
                         //- <h4 class="service-heading">E-Commerce</h4>
-                        p.text-muted Financiacion Bancaria.
+                        p.text-muted
+                          | #{index.finance.tips.bank}
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fa.fa-circle.fa-stack-2x.text-primary
                             i.fa.fa-star-half-o.fa-stack-1x.fa-inverse
                         //- <h4 class="service-heading">E-Commerce</h4>
-                        p.text-muted Capital Riesgo.
+                        p.text-muted
+                          | #{index.finance.tips.risk}
                 //- 3 Text Block
                 .row.text-center
                     .col-md-4
@@ -350,32 +351,31 @@ html(lang='es')
                             i.fa.fa-circle.fa-stack-2x.text-primary
                             i.fa.fa-money.fa-stack-1x.fa-inverse
                         //- <h4 class="service-heading">E-Commerce</h4>
-                        p.text-muted Business Angels.
+                        p.text-muted
+                          | #{index.finance.tips.angels}
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fa.fa-circle.fa-stack-2x.text-primary
                             i.fa.fa-flag.fa-stack-1x.fa-inverse
                         //- <h4 class="service-heading">E-Commerce</h4>
-                        p.text-muted Subvenciones de la UE.
+                        p.text-muted
+                          | #{index.finance.tips.ue}
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fa.fa-circle.fa-stack-2x.text-primary
                             i.fa.fa-suitcase.fa-stack-1x.fa-inverse
                         //- <h4 class="service-heading">E-Commerce</h4>
-                        p.text-muted Capital Privado.
+                        p.text-muted
+                          | #{index.finance.tips.privee}
         //- OTROS SERVICIOS (section)
         section#others
             .container
                 .row
                     .col-lg-12.text-center
                         h2.section-heading
-                            | Más 
-                            span servicios 
-                            | profesionales
+                          | !{index.others.title}
                         h3.col-md-8.col-md-offset-2.col-sm-12.section-subheading.text-muted
-                            | Buscamos la excelencia en cada uno de s servicios y una 
-                            b adaptación total a las necesidades del cliente
-                            | .
+                          | !{index.others.subtitle}
                 .row
                     //- TIP 01 ::  Consultoria de Negocio
                     .col-md-3.col-sm-6.portfolio-item
@@ -385,10 +385,9 @@ html(lang='es')
                                     i.fa.fa-plus.fa-3x
                             img.img-responsive(src='img/portfolio/consultoria-negocio.png', alt='Definir o adaptar el Código ético o de buen gobierno de su empresa', title='Definir o adaptar el Código ético o de buen gobierno de su empresa')
                         .portfolio-caption
-                            // <h4>Round Icons</h4>
+                            //- <h4>Round Icons</h4>
                             p.text-muted
-                                b Consultoría de Negocio
-                                | : Desarrollamos "business plan" y su ejecución con consecución de ventas.
+                              | !{index.others.tips.consulting}
                     //- TIP 02 :: Redes Comerciales
                     .col-md-3.col-sm-6.portfolio-item
                         a.portfolio-link(href='#riesgos-penales', data-toggle='modal')
@@ -399,8 +398,7 @@ html(lang='es')
                         .portfolio-caption
                             //- <h4>Round Icons</h4>
                             p.text-muted
-                                b Redes Comerciales
-                                | : somos su departamento de Venta Externo, reduciendo sus costes fijos y dotando a su empresa de mucha más flexibilidad.
+                              | !{index.others.tips.webs}
                     //- TIP 03 :: Internacionalizacion
                     .col-md-3.col-sm-6.portfolio-item
                         a.portfolio-link(href='#identificar-procesos', data-toggle='modal')
@@ -411,8 +409,7 @@ html(lang='es')
                         .portfolio-caption
                             //- <h4>Round Icons</h4>
                             p.text-muted
-                                b Internacionalización
-                                | : con más de 20 años de experiencia en mercados como USA, teniendo oficinas propias en NYC y Delegado Consultor de Negocio. Business plan en USA y Ronda de financiación.
+                              | !{index.others.tips.worldwide}
                     //- TIP 04 :: Import-Export
                     .col-md-3.col-sm-6.portfolio-item
                         a.portfolio-link(href='#prevencion-penal', data-toggle='modal')
@@ -423,8 +420,7 @@ html(lang='es')
                         .portfolio-caption
                             //- <h4>Round Icons</h4>
                             p.text-muted
-                                b Import-Export
-                                | : más de 15 años de experiencia en Export-Import UK, Francia, Alemania, Italia, Costa Rica, Colombia, USA y China.
+                              | !{index.others.tips.import}
                     .clearfix
         //- TEAM (section)
         section#team.bg-light-gray
@@ -432,28 +428,19 @@ html(lang='es')
                 .row
                     .col-lg-12.text-center
                         h2.section-heading
-                            | Nuestro 
-                            span equipo 
-                            | de 
-                            span profesionales
+                          | !{index.team.title}
                     //- h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 .row
                     .col-sm-4
                         .team-member
                             img.img-responsive.img-circle(src='img/team/a_decastro.jpg', alt='Alejandro de Castro, economista, MBA y PDG por el IESE, empresario y consultor de Management de empresas nacionales y multinacionales.', title='Alejandro de Castro, economista, MBA y PDG por el IESE, empresario y consultor de Management de empresas nacionales y multinacionales.')
-                            h4
-                                | Alejandro 
-                                span de Castro
-                            h5.text-muted Socio Director
-                            p.text-muted
-                                | Licenciado en Ciencias Economicas y Empresariales por la Universidad Complutense. MBA y PDG por el IESE y 
-                                span 25 años de experiencia en multinacionales
-                                |  como Unilever, Banco Santander y Heineken. Los últimos
-                                b 10 años empresario
-                                |  y
-                                span consultor de Management
-                                | .
-                            //-
+                            h4 
+                              | !{index.team.alejandro.name}
+                            h5.text-muted 
+                              | !{index.team.alejandro.job}
+                            p.text-muted 
+                              | !{index.team.alejandro.resume}
+                            //- (social media links sample)
                               <ul class="list-inline social-buttons">
                               <li><a href="#"><i class="fa fa-twitter"></i></a>
                               </li>
@@ -465,132 +452,49 @@ html(lang='es')
                     .col-sm-4
                         .team-member
                             img.img-responsive.img-circle(src='img/team/a_godino.jpg', alt='Álvaro Godino García, abogado especialista en en Derecho Mercantil y Laboral', title='Álvaro Godino García, abogado especialista en en Derecho Mercantil y Laboral')
-                            h4
-                                | Álvaro 
-                                span Godino García
-                            h5.text-muted Socio Director
-                            p.text-muted
-                                | Abogado, con más de 
-                                span 25 años de experiencia en Derecho Mercantil y Laboral
-                                | , asesorando a múltiples empresas nacionales y multinacionales, tanto en la constitución de sociedades como en el diseño de su estructura de funcionamiento.
-                                span  Especializado en Derecho fiscal, Master en Derecho ambiental.
-                                b Executive en Compliance Penal
-                                |  avalado por el
-                                b  Consejo General de la Abogacia
-                                | . Compliance Officer experto por THOMPSON REUTERS ARANZADI y en Responsabilidad de los Administradores Societarios. Por el ICAM.
-                            //-
-                              <ul class="list-inline social-buttons">
-                              <li><a href="#"><i class="fa fa-twitter"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                              </li>
-                              </ul>
+                            h4 
+                              | !{index.team.alvaro.name}
+                            h5.text-muted 
+                              | !{index.team.alvaro.job}
+                            p.text-muted 
+                              | !{index.team.alvaro.resume}
                     .col-sm-4
                         .team-member
                             img.img-responsive.img-circle(src='img/team/j_j_blanco.jpg', alt='Juan José Blanco, licenciado en Administración y Dirección de Empresas y master bancario', title='Juan José Blanco, licenciado en Administración y Dirección de Empresas y master bancario')
-                            h4
-                                | Juan José 
-                                span Blanco
-                            h5.text-muted Socio Director
+                            h4 
+                              | !{index.team.blanco.name}
+                            h5.text-muted
+                              | !{index.team.blanco.job}
                             p.text-muted
-                                | Licenciado en 
-                                b Administración y Dirección de Empresas especializado en Dirección Financiera
-                                |  por la Universidad Complutense de Madrid.
-                                b MBA en Bolsa y Mercados Financieros
-                                |  (IEB). Más de
-                                span 20 años de experiencia en sector financiero en las áreas de Banca Privada y Banca de Inversión
-                                |  (BBVA y BANIF). Actualmente, desarrolla su actividad profesional sobren dos líneas de negocio, la primera de ellas relacionada con la
-                                b captación de Talento a diferentes niveles estratégicos
-                                |  (Head Hunter) y como segunda línea de negocio se centra en las
-                                b operaciones de Corporate Finance
-                                | .
-                            //-
-                              <ul class="list-inline social-buttons">
-                              <li><a href="#"><i class="fa fa-twitter"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                              </li>
-                              </ul>
-                //- /.row
+                              | !{index.team.blanco.resume}
                 .row
                     .col-sm-4
                         .team-member
                             img.img-responsive.img-circle(src='img/team/j_pena.jpg', alt='Juan José Blanco, abogado asesor de empresas nacionales y multinacionales', title='Juan José Blanco, abogado asesor de empresas nacionales y multinacionales')
                             h4
-                                | Juan María 
-                                span Pena Lasso
-                            h5.text-muted Socio Director
+                              | !{index.team.lasso.name}
+                            h5.text-muted
+                              | !{index.team.lasso.job}
                             p.text-muted
-                                | Abogado, con más de 
-                                span 25 años de experiencia en el asesoramiento de empresas nacionales y multinacionales
-                                | , tanto en la prevención como en la litigación de
-                                b asuntos penales
-                                | ,
-                                b civiles
-                                |  y
-                                b mercantiles
-                                | . Especializado en responsabilidad civil y penal de personas físicas y jurídicas, tanto en la valoración del daño sufrido, su compensación y reclamación, como en la prevención y minoración del mismo.
-                                span Executive en Compliance Penal
-                                |  avalado por el Consejo General de la Abogacia.
-                            //-
-                              <ul class="list-inline social-buttons">
-                              <li><a href="#"><i class="fa fa-twitter"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                              </li>
-                              </ul>
+                              | !{index.team.lasso.resume}
                     .col-sm-4
                         .team-member
                             img.img-responsive.img-circle(src='img/team/l_puebla.jpg', alt='Laura Puebla, abogada en derecho Mercantil y de Empresa', title='Laura Puebla, abogada en derecho Mercantil y de Empresa')
                             h4
-                                | Laura 
-                                span Puebla
-                            h5.text-muted Abogado asociado
+                              | !{index.team.laura.name}
+                            h5.text-muted
+                              | !{index.team.laura.job}
                             p.text-muted
-                                | Licenciada en Derecho con más de 
-                                span  20 años de experiencia en derecho Mercantil y de Empresa
-                                | . Experta en
-                                b  RSC (Responsabilidad Corporativa)
-                                | ,
-                                b  asesoría de empresas
-                                |  (fiscal, laboral y mercantil) así como
-                                b  consultoría empresarial
-                                | : planes de viabilidad, estudios de mercado, plan anticrisis, reflotamiento empresarial, búsqueda de financiación, staff externo, desarrollo de negocio, internacionalización, comercio exterior...
-                            //-
-                              <ul class="list-inline social-buttons">
-                              <li><a href="#"><i class="fa fa-twitter"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                              </li>
-                              </ul>
+                              | !{index.team.laura.resume}
                     .col-sm-4
                         .team-member
                             img.img-responsive.img-circle(src='img/team/f_fernandez.jpg', alt='Fernando Fernández Fornis, licenciado en Politicas y Derecho', title='Fernando Fernández Fornis, licenciado en Politicas y Derecho')
                             h4
-                                | Fernando 
-                                span Fernández Fornis
-                            h5.text-muted Abogado asociado
+                              | !{index.team.fernando.name}
+                            h5.text-muted
+                              | !{index.team.fernando.job}
                             p.text-muted
-                                | Licenciado en Politicas y Derecho con más de 
-                                span 20 años de experiencia el sector de Telecomunicaciones, Alimentacion y Bebidas e Inmobiliaria.
-                            //-
-                              <ul class="list-inline social-buttons">
-                              <li><a href="#"><i class="fa fa-twitter"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                              </li>
-                              </ul>
-                //- /.row
+                              | !{index.team.fernando.resume}
                 //-
                   Last block text of "Our Team" Section:
                   <div class="row">

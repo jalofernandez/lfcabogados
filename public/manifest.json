@@ -1,5 +1,8 @@
 {
-	"name": "LFC abogados",
+	"name": "LFC Abogados y Economistas",
+	"description": "LFC Abogados y Economistas expertos en Compliance penal en Madrid",
+	"short_name": "LFC",
+	"orientation": "portrait",
 	"icons": [
 		{
 			"src": "img\/favicon\/android-chrome-36x36.png",
@@ -23,5 +26,8 @@
 		}
 	],
 	"theme_color": "#ffffff",
-	"display": "standalone"
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"start_url": "index.html?launcher=true"
 }
+

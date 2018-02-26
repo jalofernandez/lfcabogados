@@ -12,3 +12,6 @@ css/sources
 img/sources
 js/sources
 gitignore
+# GUI
+/target
+/.idea

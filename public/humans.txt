@@ -1,0 +1,6 @@
+# https://www.lfcabogados.com/humans.txt
+
+/* TEAM */
+    Designer & Developer: Javier Lorenzo Fernández
+    Twitter: @jalofernandez
+    From: Madrid, Madrid, Spain

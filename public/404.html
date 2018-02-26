@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta name="encoding" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Error: LFC Abogados y Economistas</title>
@@ -13,20 +13,26 @@
     <meta name="robots" content="index, follow, archive">
     <meta name="generator" content="html5, css3, nodejs, yarn, less, pug">
     <meta name="google" content="nositelinkssearchbox">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="lang" content="es-ES">
+    <meta name="Classification" content="Business">
+    <meta name="subject" content="LFC Lawyers &amp; Accounts in Madrid">
+    <meta name="rating" content="General">
+    <meta name="coverage" content="Worldwide">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
     <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="sitemap" href="sitemap.xml" title="Mapa general del website">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--if lt IE 9
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     cript(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
@@ -137,5 +143,19 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/less.min.js"></script>
     <script src="js/otherscripts.js"></script>
+    <script src="sw.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () {
+              navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                  // Registration was successful :)
+                  console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              }).catch(function (err) {
+                  // Registration failed :(
+                  console.log('ServiceWorker registration failed: ', err);
+              });
+          });
+      }
+    </script>
   </body>
 </html>
